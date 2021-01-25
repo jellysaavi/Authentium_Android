@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "575679887134",
+    "firebase_url": "https://hudson-pacific-wholesale.firebaseio.com",
+    "project_id": "hudson-pacific-wholesale",
+    "storage_bucket": "hudson-pacific-wholesale.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:575679887134:android:38d91be276992872e4fb0f",
+        "android_client_info": {
+          "package_name": "com.android.hudson_wholesale"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "575679887134-po5o0lu6n4ig2u8baddv2r0kiaddndaq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCuyI4x4GvobDfb8oYTNLf42t9dlTBBAhE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "575679887134-po5o0lu6n4ig2u8baddv2r0kiaddndaq.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "575679887134-4fh5vq7eopbm44ou9k1fl5cf57f8b60b.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.saavi.HudsonPacificWholesale"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

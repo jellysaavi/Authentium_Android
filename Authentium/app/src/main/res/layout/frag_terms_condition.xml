@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/headerLatestSpecial"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/frag_header_back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:id="@+id/frag_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:maxLines="1"
+            android:text="@string/txt_terms_condition"
+            android:singleLine="true"
+            android:textSize="@dimen/toolbar_tittle"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+    <WebView
+        android:id="@+id/wbTerms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"></WebView>
+
+</LinearLayout>

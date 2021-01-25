@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="padding_five">5dp</dimen>
+    <dimen name="margin_ten">10dp</dimen>
+    <dimen name="margin_five">5dp</dimen>
+    <dimen name="frag_profile_text_options_textsize">10sp</dimen>
+    <dimen name="padding_ten">10dp</dimen>
+    <dimen name="margin_twnety">20dip</dimen>
+    <dimen name="header_text_size">25sp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="login_marginLeft">10dp</dimen>
+    <dimen name="login_marginRight">10dp</dimen>
+    <dimen name="login_marginTop">10dp</dimen>
+    <dimen name="loginTextSize">18sp</dimen>
+    <dimen name="corner_bottomRadiusLeft">10dp</dimen>
+    <dimen name="padding_side">30dp</dimen>
+    <dimen name="margin_thirty">30dp</dimen>
+    <dimen name="textSizeHeader">15sp</dimen>
+    <dimen name="textsizename">20sp</dimen>
+    <dimen name="dialogHeaderTextsizename">22sp</dimen>
+    <dimen name="status_text_size">18sp</dimen>
+    <dimen name="frag_profile_text_lebel">20sp</dimen>
+    <dimen name="frag_welcome_text_size">20sp</dimen>
+    <dimen name="fifty">50dp</dimen>
+    <dimen name="frag_welcome_counter">18sp</dimen>
+    <dimen name="btn_text_size">17sp</dimen>
+    <dimen name="prod_name_text_size">15sp</dimen>
+    <dimen name="date_picker_size_text">30sp</dimen>
+    <dimen name="text_size_category_name">20sp</dimen>
+    <dimen name="text_size_filter_name">15sp</dimen>
+    <dimen name="message_size">15sp</dimen>
+    <dimen name="toolbar_tittle">15sp</dimen>
+    <dimen name="checkbox_text">15sp</dimen>
+    <dimen name="filter_layout_size">150dip</dimen>
+    <dimen name="margin_fifty">40dp</dimen>
+    <dimen name="margin_bottom">11dp</dimen>
+    <dimen name="walkthrough_text_tittle">35sp</dimen>
+    <dimen name="walkthrough_text_size">14sp</dimen>
+    <dimen name="crousal_card_padding">65dp</dimen>
+    <dimen name="welcome_message_text_size">100dp</dimen>
+    <dimen name="padding_fifty">40dp</dimen>
+    <dimen name="walkthrough_title">25sp</dimen>
+    <dimen name="button_width">250dp</dimen>
+    <dimen name="detail_screen_label_size">13sp</dimen>
+    <dimen name="product_detail_size">14sp</dimen>
+    <dimen name="corner_topRadiusLeft">5dp</dimen>
+    <dimen name="edittext_width_size">200dp</dimen>
+    <dimen name="spinner_width_size">220dp</dimen>
+    <dimen name="text_view_width">112dp</dimen>
+    <dimen name="text_view_height">48dp</dimen>
+    <dimen name="margin_forty">40dp</dimen>
+    <dimen name="message_height">100dp</dimen>
+    <dimen name="qtry_text_size">12sp</dimen>
+
+
+</resources>

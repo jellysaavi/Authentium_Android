@@ -1,0 +1,4 @@
+<vector android:height="22dp" android:viewportHeight="66.137"
+    android:viewportWidth="66.137" android:width="22dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/close_circular_buttton_color" android:pathData="M33.07,0C14.83,0 0,14.83 0,33.07s14.83,33.07 33.07,33.07s33.07,-14.83 33.07,-33.07S51.3,0 33.07,0zM33.07,62.14C17.04,62.14 4,49.1 4,33.07S17.04,4 33.07,4s29.07,13.04 29.07,29.07S49.1,62.14 33.07,62.14zM45.12,23.84l-9.23,9.23l9.23,9.23l-2.83,2.83l-9.23,-9.23l-9.23,9.23l-2.83,-2.83l9.23,-9.23l-9.23,-9.23l2.83,-2.83l9.23,9.23l9.23,-9.23L45.12,23.84z"/>
+</vector>

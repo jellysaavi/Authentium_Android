@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/fl_layout"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/llForegroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_bg"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_bg"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/txtDateLabel"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textsizename" />
+
+        <ImageView
+            android:id="@+id/dotUnread"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_unread"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/txtNotifyStatus"
+            android:layout_width="wrap_content"
+            android:maxLines="1"
+            android:layout_height="wrap_content"
+            android:text="Unread"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/textsizename" />
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtMessageLabel"
+            android:layout_width="match_parent"
+            android:layout_marginRight="@dimen/margin_twnety"
+            android:layout_marginEnd="@dimen/margin_twnety"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/text_color_grey"
+            android:textSize="@dimen/textsizename" />
+
+    </LinearLayout>
+
+</FrameLayout>

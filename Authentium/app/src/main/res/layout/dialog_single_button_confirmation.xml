@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background_white"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/margin_twnety"
+    android:paddingTop="@dimen/margin_twnety">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:id="@+id/alertTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_ten"
+        android:paddingTop="@dimen/padding_ten"
+        android:paddingLeft="@dimen/padding_ten"
+        android:paddingRight="@dimen/padding_ten"
+        android:maxLines="2"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/frag_profile_text_lebel" />
+
+
+    <TextView
+        android:id="@+id/alertMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_ten"
+        android:paddingTop="@dimen/padding_ten"
+        android:paddingLeft="@dimen/padding_ten"
+        android:paddingRight="@dimen/padding_ten"
+        android:textColor="@color/black"
+        android:textSize="@dimen/frag_profile_text_lebel" />
+
+
+    <LinearLayout
+        android:id="@+id/llbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/margin_thirty"
+        android:gravity="center"
+        android:paddingRight="@dimen/margin_thirty">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_button_effect"
+            android:text="@string/ok"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize" />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

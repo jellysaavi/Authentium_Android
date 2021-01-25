@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rounded_background_white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_ten"
+    android:paddingBottom="@dimen/margin_ten"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp">
+
+    <TextView
+        android:id="@+id/txtContactDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="@dimen/padding_ten"
+        android:paddingBottom="@dimen/padding_ten"
+        android:gravity="center"
+        android:textSize="@dimen/frag_profile_text_lebel"
+        android:textColor="@color/black"
+        android:text="@string/header_contact_details"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contactDetailsRvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

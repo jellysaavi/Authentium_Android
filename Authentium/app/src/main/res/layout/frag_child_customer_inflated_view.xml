@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/fl_layout"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/llForegroundView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_bg"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/txtCustomer"
+            android:layout_width="match_parent"
+            android:layout_toStartOf="@+id/imgArrow"
+            android:layout_marginRight="@dimen/margin_twnety"
+            android:layout_marginEnd="@dimen/margin_twnety"
+            android:layout_toLeftOf="@+id/imgArrow"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsizename" />
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arror_right" />
+
+    </RelativeLayout>
+
+</FrameLayout>

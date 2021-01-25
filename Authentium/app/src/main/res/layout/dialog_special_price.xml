@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rounded_background_white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_ten"
+  >
+
+    <TextView
+        android:maxLines="2"
+        android:id="@+id/txtDateLebel"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="@dimen/padding_ten"
+        android:paddingBottom="@dimen/padding_ten"
+        android:gravity="center"
+        android:textSize="@dimen/textSizeHeader"
+        android:textColor="@color/black"
+        android:text="@string/txt_spl_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtProductCode"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="@dimen/padding_ten"
+        android:paddingBottom="@dimen/padding_ten"
+        android:textSize="@dimen/frag_welcome_counter"
+        android:textColor="@color/sales_rep_product_list_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutAddFav"
+        android:textColorHint="@color/text_color_register_hint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_ten">
+        <EditText
+            android:padding="@dimen/margin_ten"
+            android:hint="@string/hint_enter_price"
+            android:id="@+id/etEnterPrice"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/loginTextSize"
+            android:digits="0123456789."
+            android:textColor="@color/text_color_grey"
+            android:maxLength="5"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingTop="@dimen/padding_ten"
+        android:gravity="center">
+
+        <Button
+            android:layout_margin="@dimen/margin_ten"
+            android:id="@+id/btnCancel"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/cancel"
+            android:background="@drawable/ripple_button_effect"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_margin="@dimen/margin_ten"
+            android:id="@+id/btnOk"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/ok"
+            android:background="@drawable/ripple_button_effect"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

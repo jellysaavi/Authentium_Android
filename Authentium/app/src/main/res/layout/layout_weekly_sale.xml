@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/margin_five"
+            android:text="@string/txt_sale_history"
+            android:textColor="@color/weekly_sale_color" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/txt_wk_sale1"
+                android:textColor="@color/product_list_color"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/weeklyOneItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fields_round_background_grey"
+                android:gravity="center"
+                android:minWidth="33dp"
+                android:minHeight="28dp"
+                android:padding="3dp"
+                android:textColor="@color/product_list_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/txt_wk_sale2"
+                android:textColor="@color/product_list_color"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/weeklyTwoItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fields_round_background_grey"
+                android:gravity="center"
+                android:minWidth="33dp"
+                android:minHeight="28dp"
+                android:padding="3dp"
+                android:textColor="@color/product_list_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/txt_wk_sale3"
+                android:textColor="@color/product_list_color"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/weeklyThreeItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fields_round_background_grey"
+                android:gravity="center"
+                android:minWidth="33dp"
+                android:minHeight="28dp"
+                android:padding="3dp"
+                android:textColor="@color/product_list_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/txt_wk_sale4"
+                android:textColor="@color/product_list_color"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/weeklyFourItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fields_round_background_grey"
+                android:gravity="center"
+                android:minWidth="33dp"
+                android:minHeight="28dp"
+                android:padding="3dp"
+                android:textColor="@color/product_list_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/txt_wk_sale5"
+                android:textColor="@color/product_list_color"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/weeklyFiveItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fields_round_background_grey"
+                android:gravity="center"
+                android:minWidth="33dp"
+                android:minHeight="28dp"
+                android:padding="3dp"
+                android:textColor="@color/product_list_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/txt_wk_sale6"
+                android:textColor="@color/product_list_color"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/weeklySixItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fields_round_background_grey"
+                android:gravity="center"
+                android:minWidth="33dp"
+                android:minHeight="28dp"
+                android:padding="3dp"
+                android:textColor="@color/product_list_color" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/txt_wk_sale7"
+                android:textColor="@color/product_list_color"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/weeklySevenItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fields_round_background_grey"
+                android:gravity="center"
+                android:minWidth="33dp"
+                android:minHeight="28dp"
+                android:padding="3dp"
+                android:textColor="@color/product_list_color" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="1dp"
+            android:layout_marginRight="1dp"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="@string/txt_wk_sale8"
+                android:textColor="@color/product_list_color"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/weeklyEightItem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/fields_round_background_grey"
+                android:gravity="center"
+                android:minWidth="33dp"
+                android:minHeight="28dp"
+                android:padding="3dp"
+                android:textColor="@color/product_list_color" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rounded_background_white"
+    android:paddingTop="@dimen/margin_twnety"
+    android:paddingBottom="@dimen/margin_twnety"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp">
+    <TextView
+        android:maxLines="1"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:id="@+id/txtDateLebel"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_ten"
+        android:textSize="@dimen/frag_profile_text_lebel"
+        android:textColor="@color/black"
+        android:text="@string/add_fav_list"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:id="@+id/textInputOrderNUmber"
+       android:textColorHint="@color/text_color_register_hint"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <EditText
+           android:padding="@dimen/margin_ten"
+           android:hint="@string/et_enter_number"
+           android:id="@+id/etFavlistName"
+            android:textColor="@color/text_color_grey"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/loginTextSize"/>
+
+   </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:padding="@dimen/margin_ten"
+        android:orientation="horizontal"
+         android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:id="@+id/btnOk"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/ok"
+            android:layout_weight="5"
+            android:background="@drawable/ripple_button_effect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"/>
+        <Button
+            android:layout_marginLeft="@dimen/margin_ten"
+            android:id="@+id/btnCancel"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/cancel"
+            android:layout_weight="5"
+            android:background="@drawable/ripple_button_effect"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+
+</LinearLayout>

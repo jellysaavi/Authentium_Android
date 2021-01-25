@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/login_white"
+    android:fillViewport="true"
+    android:paddingBottom="@dimen/margin_thirty"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:scrollbars="none">
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_weight="9"
+         android:background="@color/login_white"
+         android:layout_height="0dip"
+         android:scrollbars="none"
+         android:fillViewport="true">
+ -->
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/margin_twnety"
+        android:layout_marginRight="@dimen/margin_twnety"
+        android:orientation="vertical"
+        android:weightSum="10">
+<TextView
+    android:gravity="center"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:text="@string/lblgenerateQuote"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_register_hint"
+            android:layout_marginTop="@dimen/margin_ten">
+
+            <EditText
+                android:id="@+id/frag_login_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_disable"
+                android:drawableRight="@drawable/ic_disable"
+                android:hint="@string/hint_contact_name"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress|textCapSentences"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/frag_login_buisnessname"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilBuisnessName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_register_hint"
+            android:layout_marginTop="@dimen/margin_ten">
+
+            <EditText
+                android:id="@+id/frag_login_buisnessname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_diable_office"
+                android:drawableRight="@drawable/ic_diable_office"
+                android:hint="Business Name"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress|textCapSentences"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/frag_forgot_password_email"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilStreetAddress"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/text_color_register_hint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_ten"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etStreetAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_briefcase"
+                android:drawableRight="@drawable/ic_briefcase"
+                android:hint="@string/streetadress"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilSuburb"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/text_color_register_hint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_ten"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etSuburb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_briefcase"
+                android:drawableRight="@drawable/ic_briefcase"
+                android:hint="@string/hint_suburb"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilPostode"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/text_color_register_hint"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_ten"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/etPostCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_briefcase"
+                android:drawableRight="@drawable/ic_briefcase"
+                android:hint="@string/txt_post_code"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_register_hint"
+            android:layout_marginTop="@dimen/margin_ten">
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="0123456789"
+                android:drawableEnd="@drawable/ic_phonel"
+                android:drawableRight="@drawable/ic_phonel"
+                android:hint="@string/phone_number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="12"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_register_hint"
+            android:layout_marginTop="@dimen/margin_ten">
+
+            <EditText
+                android:id="@+id/frag_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_email"
+                android:drawableRight="@drawable/ic_email"
+                android:hint="@string/hint_emial"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/etPhone"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+        <!-- </ScrollView>-->
+
+
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="5"
+
+            android:id="@+id/frag_register_btn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_button_effect"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="@dimen/margin_thirty"
+            android:layout_marginBottom="@dimen/margin_thirty"
+
+            android:text="@string/ok"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimary"
+            style="?android:attr/borderlessButtonStyle"/>
+    <Button
+        android:layout_marginLeft="20dp"
+android:layout_weight="5"
+        android:id="@+id/btnCancel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_button_effect"
+        android:imeOptions="actionDone"
+        android:layout_marginTop="@dimen/margin_thirty"
+        android:layout_marginBottom="@dimen/margin_thirty"
+
+        android:text="@string/cancel"
+        android:textSize="14sp"
+        android:textColor="@color/colorPrimary"
+        style="?android:attr/borderlessButtonStyle"/>
+</LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

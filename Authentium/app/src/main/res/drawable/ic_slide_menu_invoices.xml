@@ -1,0 +1,5 @@
+<vector android:height="18dp" android:viewportHeight="15.0"
+    android:viewportWidth="15.0" android:width="18dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/slide_menu_icon_color" android:pathData="M9.47,0l-8,0l0,15l8,0l4,0l0,-10l-4,0z"/>
+    <path android:fillColor="@color/slide_menu_icon_color" android:pathData="M10.486,0.012l0,4.016l3.044,0z"/>
+</vector>

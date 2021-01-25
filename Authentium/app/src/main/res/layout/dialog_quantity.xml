@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/margin_thirty"
+    android:paddingLeft="@dimen/padding_side"
+    android:paddingRight="@dimen/padding_side"
+    android:paddingTop="@dimen/margin_thirty">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_background_white"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="@dimen/padding_ten"
+            android:paddingTop="@dimen/padding_ten"
+            android:text="@string/txt_add_quantity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/frag_profile_text_lebel" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_twnety"
+            android:layout_marginRight="@dimen/margin_twnety">
+
+            <TextView
+                android:id="@+id/txtQtyDecrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_ten"
+                android:text="-"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/walkthrough_text_tittle"
+                android:textStyle="bold" />
+
+
+            <me.tankery.lib.circularseekbar.CircularSeekBar
+                android:id="@+id/circularSeekBar"
+                android:layout_width="150dp"
+                android:layout_height="170dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                app:cs_circle_style="round"
+                app:cs_circle_stroke_width="4dp"
+                app:cs_pointer_stroke_width="16dp"
+                app:cs_pointer_color="@color/colorPrimary"
+                app:cs_circle_progress_color="@color/colorPrimary"
+                app:cs_circle_color="@color/frag_welcome_block"
+                app:cs_max="100"
+                app:cs_pointer_halo_color_ontouch ="@color/colorPrimary"
+                app:cs_pointer_halo_border_width="4dp"
+                app:cs_pointer_angle = "0"/>
+
+
+            <com.android.authentium.customview.BackAwareEditText
+                android:id="@+id/txtQuantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@android:color/transparent"
+                android:focusableInTouchMode="true"
+                android:imeOptions="actionDone"
+                android:inputType="numberDecimal"
+                android:maxLength="8"
+                android:textColor="@color/quantity_txt_color"
+                android:textSize="@dimen/text_size_category_name"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/txtQtyIncrease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/padding_ten"
+                android:text="+"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/walkthrough_text_tittle"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <Button
+            android:id="@+id/btnOk"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/margin_ten"
+            android:background="@drawable/ripple_button_effect"
+            android:paddingBottom="@dimen/margin_ten"
+            android:paddingTop="@dimen/margin_ten"
+            android:text="@string/btn_add_cart"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,72 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/scanBarcode"
+        android:icon="@drawable/ic_menu_barcode"
+        app:showAsAction="collapseActionView|always"
+        android:title="@string/barcode"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/save"
+        android:icon="@drawable/ic_save_pantry"
+        app:showAsAction="collapseActionView|always"
+        android:title="@string/save_pantry_title"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/copyPantry"
+        android:icon="@drawable/ic_copy_pantry"
+        android:title="@string/capy_pantry_title"
+        app:showAsAction="collapseActionView|always"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/ic_search_icon"
+        android:title="@string/search_title"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/options"
+        app:showAsAction="collapseActionView|always"
+        android:title="@string/options_title"
+        android:icon="@drawable/ic_latest_special_menu"/>
+    <item
+        android:id="@+id/email"
+        app:showAsAction="collapseActionView|always"
+        android:title="@string/cart_title"
+        android:icon="@drawable/email"/>
+    <item
+        android:id="@+id/notes"
+        app:showAsAction="collapseActionView|always"
+        android:title="@string/cart_title"
+        android:icon="@drawable/notes"/>
+    <item
+        android:id="@+id/help"
+        app:showAsAction="collapseActionView|always"
+        android:title="@string/options_title"
+        android:icon="@drawable/baseline_help_outline_24"/>
+    <item
+        android:id="@+id/cart"
+        app:showAsAction="collapseActionView|always"
+        android:title="@string/cart_title"
+        android:icon="@drawable/ic_if_cart"/>
+
+
+    <item
+        android:id="@+id/logout"
+        app:showAsAction="collapseActionView|always"
+        android:title="@string/options_title"
+        android:icon="@drawable/ic_rep_logout"
+        android:visible="false"/>
+
+    <item
+        android:id="@+id/right_icon"
+        app:showAsAction="collapseActionView|always"
+        android:title="@string/options_title"
+        android:icon="@drawable/ic_arrow_forward"
+        android:visible="false"/>
+</menu>

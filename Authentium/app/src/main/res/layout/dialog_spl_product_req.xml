@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:paddingTop="@dimen/margin_twnety"
+    android:paddingBottom="@dimen/margin_twnety"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:gravity="center"
+   >
+
+    <LinearLayout
+        android:background="@drawable/rounded_background_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:minWidth="300dp">
+    <TextView
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/txtProductReqLebel"
+       android:paddingTop="@dimen/padding_ten"
+        android:paddingBottom="@dimen/padding_ten"
+        android:gravity="center"
+        android:textSize="@dimen/frag_profile_text_lebel"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/frag_spl_prod_req"/>
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:id="@+id/inputLayoutProductReq"
+       android:textColorHint="@color/text_color_register_hint"
+       android:layout_height="wrap_content">
+       <EditText
+           android:padding="@dimen/activity_horizontal_margin"
+           android:id="@+id/etProductReq"
+           android:hint="Please enter product request"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/loginTextSize"
+           android:inputType="textCapSentences"
+           android:textColor="@color/text_color_grey"
+           android:maxLength="50"
+           android:maxLines="4"
+           android:singleLine="true"/>
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <Button
+            android:layout_margin="10dp"
+            android:id="@+id/btnSubmit"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/submit"
+            android:background="@drawable/ripple_button_effect"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+        </LinearLayout>
+
+</LinearLayout>

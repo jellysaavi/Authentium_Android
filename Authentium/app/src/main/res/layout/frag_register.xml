@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/login_white"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    android:clipToPadding="false"
+    android:clipChildren="false"
+    android:scrollbars="none">
+
+    <!-- <ScrollView
+         android:layout_width="match_parent"
+         android:layout_weight="9"
+         android:background="@color/login_white"
+         android:layout_height="0dip"
+         android:scrollbars="none"
+         android:fillViewport="true">
+ -->
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="@dimen/margin_twnety"
+        android:layout_marginRight="@dimen/margin_twnety"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:src="@drawable/ic_logo_saavi" />
+        <LinearLayout
+            android:weightSum="10"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <CheckBox
+                android:checked="true"
+                android:layout_weight="3"
+                android:text="@string/businessaccount"
+                android:layout_marginTop="@dimen/margin_ten"
+                android:id="@+id/checkbox"
+                android:layout_width="0dip"
+                android:buttonTint="@color/saavi_base_color"
+                android:layout_height="wrap_content" />
+            <CheckBox
+                android:checked="false"
+
+                android:layout_weight="7"
+                android:text="@string/privateDelivery"
+                android:layout_marginTop="@dimen/margin_ten"
+                android:id="@+id/checkbox1"
+                android:buttonTint="@color/saavi_base_color"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_register_hint"
+            app:hintTextAppearance="@style/MyHintText"
+            android:layout_marginTop="@dimen/margin_ten">
+
+            <EditText
+                android:id="@+id/frag_login_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_disable"
+                android:drawableRight="@drawable/ic_disable"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/text_color_register_hint"
+                android:inputType="textEmailAddress|textCapSentences"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/frag_login_buisnessname"
+                android:singleLine="true"
+                android:textColor="@color/colorPrimary" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilBuisnessName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_register_hint"
+            app:hintTextAppearance="@style/MyHintText"
+            android:layout_marginTop="@dimen/margin_ten">
+
+            <EditText
+                android:id="@+id/frag_login_buisnessname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_diable_office"
+                android:drawableRight="@drawable/ic_diable_office"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress|textCapSentences"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/frag_forgot_password_email"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilABN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_register_hint"
+            app:hintTextAppearance="@style/MyHintText"
+            android:layout_marginTop="@dimen/margin_ten">
+
+            <EditText
+                android:id="@+id/frag_abn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_briefcase"
+                android:drawableRight="@drawable/ic_briefcase"
+                android:hint="@string/hint_abn"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/frag_login_buisnessname"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_register_hint"
+            app:hintTextAppearance="@style/MyHintText"
+            android:layout_marginTop="@dimen/margin_ten">
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_phonel"
+                android:drawableRight="@drawable/ic_phonel"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/text_color_register_hint"
+                android:inputType="number"
+                android:maxLength="10"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey"
+                android:digits="0123456789"/>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilStreetAddress"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/text_color_register_hint"
+            app:hintTextAppearance="@style/MyHintText"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_ten"
+            app:passwordToggleEnabled="false">
+
+            <EditText
+                android:id="@+id/etStreetAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_briefcase"
+                android:drawableRight="@drawable/ic_briefcase"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/text_color_register_hint"
+                android:inputType="text"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilSuburb"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/text_color_register_hint"
+            app:hintTextAppearance="@style/MyHintText"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_ten"
+            app:passwordToggleEnabled="false">
+
+            <EditText
+                android:id="@+id/etSuburb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_briefcase"
+                android:drawableRight="@drawable/ic_briefcase"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/text_color_register_hint"
+                android:inputType="text"
+                android:maxLength="20"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilPostode"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/text_color_register_hint"
+            app:hintTextAppearance="@style/MyHintText"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_ten"
+            app:passwordToggleEnabled="false">
+
+            <EditText
+                android:id="@+id/etPostCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_briefcase4"
+                android:drawableRight="@drawable/ic_briefcase4"
+                android:imeOptions="actionDone"
+                android:textColorHint="@color/text_color_register_hint"
+                android:inputType="number"
+                android:maxLength="4"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/text_color_register_hint"
+            app:hintTextAppearance="@style/MyHintText"
+            android:layout_marginTop="@dimen/margin_ten">
+
+            <EditText
+                android:id="@+id/frag_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_email"
+                android:drawableRight="@drawable/ic_email"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/text_color_register_hint"
+                android:inputType="textEmailAddress"
+                android:maxLength="50"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/etPhone"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/ilPassword"
+            android:layout_width="match_parent"
+            android:textColorHint="@color/text_color_register_hint"
+            app:hintTextAppearance="@style/MyHintText"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_ten"
+            app:passwordToggleEnabled="true">
+
+            <EditText
+                android:id="@+id/frag_login_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_password"
+                android:drawableRight="@drawable/ic_password"
+                android:imeOptions="actionNext"
+                android:textColorHint="@color/text_color_register_hint"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:maxLines="1"
+
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey" />
+
+            <CheckBox
+                android:id="@+id/mailing_check"
+                android:layout_marginTop="@dimen/margin_twnety"
+                android:gravity="left"
+                android:text="Join our mailing list to stay up to date with our latest news, products and specials."
+                android:layout_width="match_parent"
+                android:checked="true"
+                android:layout_height="wrap_content">
+            </CheckBox>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+        <!-- </ScrollView>-->
+
+
+
+        <Button
+            android:id="@+id/frag_register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_button_effect"
+            android:imeOptions="actionDone"
+            android:layout_marginTop="@dimen/margin_thirty"
+            android:layout_marginBottom="@dimen/margin_thirty"
+            android:paddingLeft="@dimen/margin_fifty"
+            android:paddingRight="@dimen/margin_fifty"
+            android:text="@string/register"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            style="?android:attr/borderlessButtonStyle"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_margin="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/txtTerms"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginTop="@dimen/margin_twnety"
+                android:layout_gravity="bottom"
+                android:gravity="right"
+                android:text="@string/txt_terms"
+                android:textColor="@color/selector_forgot_pswd_txtview"
+                android:textSize="@dimen/loginTextSize"
+                />
+
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="20dp"
+                android:layout_gravity="bottom"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginBottom="@dimen/margin_twnety"
+                android:background="@color/text_color_grey_light" />
+
+            <TextView
+                android:id="@+id/txtPrivacy"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight=".5"
+                android:layout_marginTop="@dimen/margin_twnety"
+                android:layout_gravity="bottom"
+                android:gravity="left"
+                android:text="@string/txt_privacy"
+                android:textColor="@color/selector_forgot_pswd_txtview"
+                android:textSize="@dimen/loginTextSize"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

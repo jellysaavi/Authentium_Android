@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryUnited">#1d365d</color>
+    <color name="colorSecondary">#1d365d</color>
+    <color name="colorPrimary">#1d365d</color>
+    <color name="colorBtnPrimary">@color/login_white</color>
+    <color name="colorAccent">@color/colorPrimary</color>
+    <color name="login_white">#fff</color>
+    <color name="text_color_white">@color/login_white</color>
+    <color name="text_color_grey">#3f3f3f</color>
+    <color name="text_color_grey_light">#c1c1c1</color>
+    <color name="grey_drag_background">#ededed</color>
+    <color name="text_color_register_hint">#b4b4b4</color>
+    <color name="textcolor_edittext">#1d365d</color>
+    <color name="textcolor_edittext_icons">#999999</color>
+    <color name="profile_background">#fafafa</color>
+    <color name="welcome_background">#262626</color>
+    <color name="black">#000000</color>
+    <color name="frag_welcome_block">#f7f7f7</color>
+    <color name="background_grey">@color/login_white</color>
+    <color name="product_name_color">@color/colorPrimary</color>
+    <color name="product_detail_color">#ABABAB</color>
+    <color name="swipleft">#A8CA00</color>
+    <color name="tick_green">#b0cf00</color>
+    <color name="buy_color">#2a99f3</color>
+    <color name="swiperight">@color/colorPrimary</color>
+    <color name="background_color_list">#F2F2F2</color>
+    <color name="backgroud_myCart_list">#F6F6F6</color>
+    <color name="quantity_txt_color">#1A1A1A</color>
+    <color name="red_dark">#b93a3a</color>
+    <color name="red_bright">#ff3838</color>
+    <color name="menu_icon_color">@color/textcolor_edittext</color>
+    <color name="grey_text_color">#FF797979</color>
+    <color name="walkthrough_color">#5C5C5C</color>
+    <color name="ripple_effect_color">@color/background_color_list</color>
+    <color name="slide_menu_icon_color">@color/login_white</color>
+    <color name="grey_background">#F4F8F9</color>
+    <color name="country_reward_color">@color/tick_green</color>
+    <color name="product_list_color">#2d2d2d</color>
+    <color name="text_view_background_color">#f4fcff</color>
+    <color name="country_wide_Color">@color/tick_green</color>
+    <color name="sales_rep_product_list_color">#5f5f5f</color>
+    <color name="selected_pantry_text_color">#959595</color>
+    <color name="weekly_sale_color">#343434</color>
+    <color name="qty_text_color">#434343</color>
+    <color name="ware_house_text_color">#020202</color>
+    <color name="button_color">#b5c857 </color>
+    <color name="cart_background">#efefef</color>
+    <color name="welcome_text_color">#444444</color>
+    <color name="latest_special_color">@color/colorPrimary</color>
+    <color name="latest_special_light_color">#696969</color>
+    <color name="light_color">#ACACAC</color>
+    <color name="close_circular_buttton_color">#999898</color>
+    <color name="icon_pantry_sorting_color">#A2A2A2</color>
+    <color name="circle_color">#e51618</color>
+    <color name="promotion_color">#c4a714</color>
+    <color name="cart_color">@color/latest_special_light_color</color>
+    <color name="cart_border_color">@color/colorPrimary</color>
+    <color name="cart_background_color">@color/light_color</color>
+    <color name="btn_pressed_color">@color/colorPrimary</color>
+    <color name="login_background">#1A244A</color>
+    <color name="placeholder_color">#c2c2c2</color>
+    <color name="in_line_color">#0000FF</color>
+
+
+    <color name="viewfinder_mask">#46070707</color>
+    <color name="viewfinder_laser">#00FFFFFF</color>
+    <color name="viewfinder_border">#ffff</color>
+    <color name="search_hint_grey">#CFCECE</color>
+    <color name="start_fill">#ffef10</color>
+    <color name="yellow">#ffff00</color>
+
+
+    <color name="saavi_base_color">#1d365d</color>
+
+
+
+
+    <color name="colorPrimaryDark">#424f70</color>
+    <color name="splashColor">#424f70</color>
+    <color name="splashLabelColor">#27334f</color>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen1</item>
+
+    </array>
+
+    <color name="dot_light_screen1">#cccccc</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen3</item>
+
+    </array>
+
+    <color name="dot_dark_screen1">#f32309</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <color name="skip_button_color">#a4adba</color>
+    <color name="background_login">#f4f9fd</color>
+
+    <color name="background_home">#283450</color>
+
+
+</resources>
+
+

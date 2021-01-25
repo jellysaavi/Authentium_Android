@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Authentium.iml" filepath="$PROJECT_DIR$/.idea/modules/Authentium.iml" group="Authentium" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Authentium-app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Authentium-app.iml" group="Authentium/app" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="saavifrontend-southernfreshandroid-1af592d14d76/app" />
+      <module fileurl="file://$PROJECT_DIR$/saavifrontend-southernfreshandroid-1af592d14d76.iml" filepath="$PROJECT_DIR$/saavifrontend-southernfreshandroid-1af592d14d76.iml" group="saavifrontend-southernfreshandroid-1af592d14d76" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rounded_background_white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_ten"
+    android:weightSum="10"
+    android:minHeight="500dp"
+    android:paddingBottom="@dimen/margin_ten"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minWidth="300dp">
+
+    <TextView
+        android:minHeight="60dp"
+        android:layout_weight="1.5"
+        android:id="@+id/txtHeaderShipping"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="@dimen/padding_ten"
+        android:paddingBottom="@dimen/padding_ten"
+        android:gravity="center"
+        android:textSize="@dimen/frag_profile_text_lebel"
+        android:textColor="@color/black"
+        android:text="@string/title_shipping_address"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addressRvList"
+        android:layout_weight="7"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:minHeight="100dp"
+
+        android:layout_weight="1.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/margin_thirty"
+        android:paddingRight="@dimen/margin_thirty">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/ripple_button_effect"
+            android:text="@string/cancel"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize"
+            android:layout_marginRight="@dimen/margin_ten"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/ripple_button_effect"
+            android:text="@string/ok"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:gravity="center"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_twnety"
+            android:gravity="center"
+            android:text="@string/lebel_important"
+            android:textColor="@color/black"
+            android:textSize="@dimen/frag_profile_text_lebel" />
+
+        <TextView
+            android:minLines="4"
+            android:id="@+id/txt_backorder_message"
+            android:text="@string/backorder_stock_not_available"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/btnOk"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_twnety"
+            android:layout_gravity="center"
+            android:background="@drawable/ripple_button_effect"
+            android:paddingLeft="@dimen/margin_thirty"
+            android:paddingRight="@dimen/margin_thirty"
+            android:text="@string/ok"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

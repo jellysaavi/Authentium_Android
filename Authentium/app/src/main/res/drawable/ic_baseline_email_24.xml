@@ -1,0 +1,14 @@
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="180"
+    android:pivotX="50%"
+    android:pivotY="50%"
+    android:toDegrees="180">
+  <vector android:height="18dp" android:viewportHeight="446.25"
+      android:viewportWidth="500.25" android:width="18dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/slide_menu_icon_color" android:pathData="M0,250,l0,-180,250,0,250,0,0,180,0,180,-250,0,-250,0,0,-180z,m480
+152,c0,-12,-215,-182,-230,-182,-15,0,-230,170,-230,182,0,4,104,8,230,8,127
+0,230,-4,230,-8z,m-315,-166,c39,-31,77,-56,85,-56,8,0,47,25,85,56,39,31,87
+69,108,86,l37,30,0,-131,0,-131,-230,0,-230,0,0,131,0,131,38,-30,c20,-17,69
+-55,107,-86z"/>
+  </vector>
+</rotate>

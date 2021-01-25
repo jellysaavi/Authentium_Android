@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rounded_background_white"
+    android:paddingTop="@dimen/margin_twnety"
+    android:paddingBottom="@dimen/margin_twnety"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_ten"
+    android:minWidth="300dp">
+    <TextView
+        android:maxLines="2"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:id="@+id/txtDateLebel"
+       android:paddingTop="@dimen/padding_ten"
+        android:paddingBottom="@dimen/padding_ten"
+        android:gravity="center"
+        android:textSize="@dimen/frag_profile_text_lebel"
+        android:textColor="@color/black"
+        android:text="@string/add_fav_list"
+       android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+   <com.google.android.material.textfield.TextInputLayout
+       android:layout_width="match_parent"
+       android:id="@+id/inputLayoutAddFav"
+       android:textColorHint="@color/text_color_register_hint"
+       android:layout_height="wrap_content">
+       <EditText
+           android:padding="@dimen/margin_ten"
+           android:hint="@string/name_fav_list"
+           android:id="@+id/etFavlistName"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:textSize="@dimen/loginTextSize"
+           android:inputType="textCapSentences"
+           android:textColor="@color/text_color_grey"
+           android:maxLength="50"
+           android:maxLines="4"
+           android:singleLine="true"/>
+
+   </com.google.android.material.textfield.TextInputLayout>
+
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <Button
+            android:layout_weight=".5"
+            android:layout_margin="10dp"
+            android:id="@+id/btnCancel"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/cancel"
+            android:background="@drawable/ripple_button_effect"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:layout_weight=".5"
+            android:layout_margin="10dp"
+            android:id="@+id/btnOk"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/ok"
+            android:background="@drawable/ripple_button_effect"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

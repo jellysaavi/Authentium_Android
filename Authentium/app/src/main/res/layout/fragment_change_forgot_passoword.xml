@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/headerLatestSpecial"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/frag_header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/reset_password"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/toolbar_tittle" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_above="@+id/llMainLayout"
+        android:layout_below="@+id/headerLatestSpecial">
+        <ImageView
+            android:src="@drawable/ic_logo_saavi"
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llMainLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutNewPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_twnety"
+            android:layout_marginRight="@dimen/margin_twnety"
+            android:layout_marginTop="@dimen/margin_ten"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/MyErrorText">
+
+            <EditText
+                android:id="@+id/frag_change_password_new"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical"
+                android:hint="@string/new_password"
+                android:inputType="textPassword"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/loginTextSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/inputLayoutConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_twnety"
+            android:layout_marginRight="@dimen/margin_twnety"
+            android:layout_marginTop="@dimen/margin_ten"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@style/MyErrorText">
+
+            <EditText
+                android:id="@+id/frag_change_password_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin"
+                android:gravity="center_vertical"
+                android:hint="@string/confirm_new_password"
+                android:imeOptions="actionDone"
+                android:inputType="textPassword"
+                android:maxLength="14"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textColor="@color/text_color_grey"
+                android:textSize="@dimen/loginTextSize" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_twnety"
+            android:layout_marginRight="@dimen/margin_twnety"
+            android:layout_marginTop="@dimen/margin_ten"
+            android:gravity="top"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/frag_change_password_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ripple_button_effect"
+                android:imeOptions="actionDone"
+                android:textSize="@dimen/loginTextSize"
+                android:text="@string/frag_profile_change_password"
+                android:textColor="@color/colorPrimary"
+                style="?android:attr/borderlessButtonStyle"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

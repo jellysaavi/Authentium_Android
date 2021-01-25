@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rlDeleteView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:layout_centerVertical="true"
+            android:textSize="@dimen/textsizename"
+            android:layout_marginRight="20dp"
+            android:textColor="@color/login_white"
+            android:text="@string/delete"/>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/llForegroundView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_color_list"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <TextView
+            android:id="@+id/txtCustomerComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/cbAddCommentList"
+            android:layout_marginRight="3dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/cbAddCommentList"
+            android:textColor="@color/selector_text_view"
+            android:textSize="@dimen/message_size"/>
+
+
+        <CheckBox
+            android:id="@+id/cbAddCommentList"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+           />
+
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/llCallLayout"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <TextView
+        android:id="@+id/txtContactName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_ten"
+        android:textSize="@dimen/frag_profile_text_lebel"
+        android:textColor="@color/black"
+        tools:text="hjkkkkkkkl"/>
+
+    <TextView
+    android:id="@+id/txtPhoneNumber"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/padding_ten"
+    android:layout_below="@+id/txtContactName"
+        android:textSize="@dimen/frag_profile_text_lebel"
+    android:textColor="@color/black"
+        tools:text="hjkkkkkkkl"/>
+
+
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_ten"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textSize="@dimen/frag_profile_text_lebel"
+        android:textColor="@color/black"
+        android:text="@string/txt_contact_email"
+        android:background="@drawable/ripple_button_effect" />
+
+
+</RelativeLayout>

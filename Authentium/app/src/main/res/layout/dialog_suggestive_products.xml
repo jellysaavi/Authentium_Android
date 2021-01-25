@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/rounded_background_white"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/margin_ten"
+    android:weightSum="10"
+    android:paddingBottom="@dimen/margin_ten"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="300dp">
+
+    <TextView
+        android:layout_weight="1"
+        android:id="@+id/txtHeaderShipping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="@string/title_suggestion_label_1"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="3.5"
+
+        android:id="@+id/addressRvList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    <TextView
+        android:layout_weight="1"
+
+        android:id="@+id/txtHeaderShipping2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:text="@string/title_suggestion_label_2"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_weight="3.5"
+
+        android:id="@+id/addressRvList2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_weight="1"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_thirty"
+        android:paddingRight="@dimen/margin_thirty">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/ripple_button_effect"
+            android:text="@string/cancel"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize"
+            android:layout_marginRight="@dimen/margin_ten"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/ripple_button_effect"
+            android:text="@string/ok"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+</LinearLayout>

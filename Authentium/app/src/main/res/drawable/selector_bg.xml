@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:exitFadeDuration="@android:integer/config_longAnimTime">
+
+    <item android:drawable="@color/text_color_grey_light" android:state_focused="true" android:state_pressed="true" />
+
+    <item android:drawable="@color/text_color_grey_light" android:state_focused="false" android:state_pressed="true" />
+
+    <item android:drawable="@color/text_color_grey_light" android:state_focused="true" android:state_pressed="false" />
+
+    <item android:drawable="@color/login_white" android:state_focused="false" android:state_pressed="false" />
+
+</selector>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:right="5dp"
+        android:top="3dp"
+        android:id="@+id/ic_cart_items"
+        android:drawable="@drawable/ic_if_cart"
+        android:gravity="center"/>
+</layer-list>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:minWidth="600dp"
+    android:background="@color/login_white"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/lblHeader"
+        android:layout_marginTop="@dimen/margin_twnety"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:text="Enter customer a copy of default pantry list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_marginTop="@dimen/margin_twnety"
+        android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/etContactName"
+        android:gravity="top|left"
+        android:hint="Contact Name"
+        android:layout_marginTop="@dimen/margin_twnety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+android:layout_marginTop="@dimen/margin_twnety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/etEmailAddress"
+        android:gravity="top|left"
+        android:hint="Email Address"
+        android:layout_marginTop="@dimen/margin_twnety"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_marginTop="@dimen/placeholder_top_size"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:textStyle="bold"
+
+            android:id="@+id/btnBack"
+            android:background="@drawable/round_background_login"
+            android:text="@string/back"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textStyle="bold"
+
+            android:id="@+id/btnAdd"
+            android:layout_marginLeft="@dimen/margin_twnety"
+            android:background="@drawable/round_background_login"
+
+            android:text="ADD"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</LinearLayout>

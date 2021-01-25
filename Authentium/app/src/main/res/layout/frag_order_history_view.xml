@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/root"
+    android:paddingTop="@dimen/margin_twnety"
+    android:paddingBottom="@dimen/margin_twnety"
+    android:paddingLeft="@dimen/margin_ten"
+    android:paddingRight="@dimen/margin_ten"
+    android:weightSum="10"
+    >
+
+
+    <TextView
+        android:id="@+id/txtOrderDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/prod_name_text_size"
+        android:layout_weight="4"
+        />
+
+    <TextView
+        android:id="@+id/txtNumber"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/prod_name_text_size"
+        android:layout_weight="3"
+        />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:text="-"
+        android:layout_gravity="center"
+        android:textSize="@dimen/prod_name_text_size"/>
+
+
+
+
+
+
+
+</LinearLayout>

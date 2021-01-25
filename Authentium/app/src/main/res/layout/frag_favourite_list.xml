@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_above="@+id/fabAddFavList"
+        android:layout_height="wrap_content"
+        android:background="@color/login_white">
+
+        <TextView
+            android:id="@+id/noFavList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/hint_no_fav_list"
+            android:visibility="gone" />
+
+       <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFavList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/fabAddFavList"
+        android:layout_width="@dimen/button_width"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_horizontal_margin"
+        android:background="@drawable/ripple_button_effect"
+        android:drawablePadding="8dp"
+        android:padding="@dimen/padding_ten"
+        android:text="@string/add_fav"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/loginTextSize"
+        style="?android:attr/borderlessButtonStyle"/>
+
+</RelativeLayout>

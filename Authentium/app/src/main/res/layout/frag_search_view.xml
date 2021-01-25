@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/searchlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="9"
+            android:iconifiedByDefault="true"
+            android:queryHint="Search Item"
+            android:tooltipText="Search Item"
+            app:defaultQueryHint="Search Item">
+        </androidx.appcompat.widget.SearchView>
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/btnScanBarcode"
+                android:layout_marginLeft="@dimen/margin_twnety"
+                android:layout_marginRight="@dimen/margin_ten"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:src="@drawable/scan_barcode" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnAddItem"
+        android:layout_below="@+id/searchlay"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProductList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:dividerHeight="0dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtNoProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/txt_no_product"
+        android:visibility="gone" />
+
+
+</RelativeLayout>

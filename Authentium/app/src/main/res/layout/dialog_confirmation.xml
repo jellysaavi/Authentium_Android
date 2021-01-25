@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background_white"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/margin_twnety"
+    android:paddingTop="@dimen/margin_twnety">
+
+    <TextView
+        android:id="@+id/alertTittle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_ten"
+        android:paddingTop="@dimen/padding_ten"
+        android:textColor="@color/black"
+        android:textSize="@dimen/frag_profile_text_lebel"
+        android:textStyle="bold"/>
+
+
+    <TextView
+        android:id="@+id/alertMsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_ten"
+        android:paddingTop="@dimen/padding_ten"
+        android:textColor="@color/black"
+        android:textSize="@dimen/frag_profile_text_lebel" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/margin_thirty"
+        android:paddingRight="@dimen/margin_thirty">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/ripple_button_effect"
+            android:text="@string/no"
+            android:layout_marginRight="@dimen/margin_ten"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/ripple_button_effect"
+            android:text="@string/yes"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize" />
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,13 @@
+<vector android:height="20dp" android:viewportHeight="750"
+    android:viewportWidth="750" android:width="20dp" xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:fillColor="@color/slide_menu_icon_color" android:pathData="M70 380 l0 -360 115 0 c70 0 115 -4 115 -10 0 -6 32 -10 75 -10 43 0 75 4 75 10 0 6 45 10 115 10 l115 0 0 360 0 360 -305 0 -305 0 0 -360z m540 0 l0 -290 -35 0 c-28 0 -35 4 -35 20 0 19 -7 20 -165 20 -158 0 -165 -1 -165 -20 0 -16 -7 -20 -35 -20 l-35 0 0 290 0 290 235 0 235 0 0 -290z m-310 -305 c0 -9 -9 -15 -25 -15 -16 0 -25 6 -25 15 0 9 9 15 25 15 16 0 25 -6 25 -15z m200 0 c0 -9 -9 -15 -25 -15 -16 0 -25 6 -25 15 0 9 9 15 25 15 16 0 25 -6 25 -15z m-90 -30 c0 -10 -11 -15 -35 -15 -24 0 -35 5 -35 15 0 10 11 15 35 15 24 0 35 -5 35 -15z"/>
+    <path android:fillColor="@color/slide_menu_icon_color" android:pathData="M180 580 c0 -20 5 -21 98 -18 78 2 97 6 97 18 0 12 -19 16 -97 18 -93 3 -98 2 -98 -18z"/>
+    <path android:fillColor="@color/slide_menu_icon_color" android:pathData="M193 523 c-7 -2 -13 -11 -13 -19 0 -12 33 -14 195 -14 160 0 195 2 195 14 0 8 -7 17 -16 20 -19 7 -343 7 -361 -1z"/>
+    <path android:fillColor="@color/slide_menu_icon_color"  android:pathData="M180 420 c0 -19 7 -20 195 -20 188 0 195 1 195 20 0 19 -7 20 -195 20 -188 0 -195 -1 -195 -20z"/>
+    <path android:pathData="M180 345 c0 -12 18 -15 105 -15 87 0 105 3 105 15 0 12 -18 15 -105 15 -87 0 -105 -3 -105 -15z"/>
+    <path android:fillColor="@color/slide_menu_icon_color" android:pathData="M400 345 c0 -8 9 -15 20 -15 11 0 20 7 20 15 0 8 -9 15 -20 15 -11 0 -20 -7 -20 -15z"/>
+    <path android:fillColor="@color/slide_menu_icon_color" android:pathData="M450 345 c0 -12 13 -15 60 -15 47 0 60 3 60 15 0 12 -13 15 -60 15 -47 0 -60 -3 -60 -15z"/>
+    <path android:fillColor="@color/slide_menu_icon_color" android:pathData="M182 273 c3 -16 20 -18 193 -18 173 0 190 2 193 18 3 16 -11 17 -193 17 -182 0 -196 -1 -193 -17z"/>
+    <path android:fillColor="@color/slide_menu_icon_color" android:pathData="M187 213 c-4 -3 -7 -12 -7 -20 0 -10 22 -13 94 -13 92 0 126 11 95 31 -16 10 -172 12 -182 2z"/>
+
+</vector>

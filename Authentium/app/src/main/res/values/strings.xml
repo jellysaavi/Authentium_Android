@@ -1,0 +1,602 @@
+<resources>
+    <string name="app_name">Authentium</string>
+
+    <string name="edit_text_hint_font">Roboto-Italic_0.ttf</string>
+    <string name="frag_menu_my_profile">Account</string>
+    <string name="frag_menu_logout">Logout</string>
+    <string name="enter_email_fp">Enter your login email address</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="confirm_password_error">Password and confirm password do not match</string>
+    <string name="no_internet">Internet connection not available</string>
+    <string name="login">LOGIN</string>
+    <string name="submit">SUBMIT</string>
+    <string name="hint_password">Password</string>
+    <string name="cancel">Cancel</string>
+    <string name="hint_emial">Email Address</string>
+    <string name="forgot_password">Forgot your password?</string>
+    <string name="server_error">Something went wrong. Please try again.</string>
+    <string name="new_password">New Password</string>
+    <string name="confirm_password">Re-enter Password</string>
+    <string name="old_password">Old Password</string>
+    <string name="frag_profile_change_password">Submit</string>
+    <string name="hint_phone_number"><![CDATA[Phone Number<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_suburb"><![CDATA[Suburb<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_txt_post_code"><![CDATA[Post Code<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_emial_register"><![CDATA[Email Address<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_password_register"><![CDATA[Password<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="streetadress">Street Address</string>
+    <string name="hint_streetadress"><![CDATA[Street Address<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_suburb_for_delivery">Suburb</string>
+
+    <!--Location API Alert Strings-->
+    <string name="alert_valid_email">Please enter valid email address</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="register"><![CDATA[<font color=#c1c1c1>Don\'t have an account?</font> <font color=#2278d4>Sign up</font>]]></string>
+
+    <!--    <string name="register">Don\'t have an account? Sign up</string>-->
+    <string name="phone_number">Phone Number</string>
+
+    <string name="validate_email">Please enter email address</string>
+    <string name="validate_businessname">Please enter business name</string>
+    <string name="validate_contact_name">Please enter full name</string>
+    <string name="validate_password_min_char">Please enter valid password</string>
+    <string name="validate_phone">Please enter phone number</string>
+    <string name="validate_password">Please enter password</string>
+    <string name="validate_confirm_password">Password and Re-enter Password does not match</string>
+    <string name="registered_successfully">Thank You, \n Your registration has been successfully submitted. \n \n One of our sales representative will be in contact with you shortly</string>
+    <string name="title_activity_main2">Main2Activity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="frag_menu_order">Browse</string>
+    <string name="frag_menu_fav_list">Favourites </string>
+    <string name="frag_menu_history">My Orders</string>
+    <string name="frag_menu_invoices">Invoices</string>
+    <string name="lebelWelcome">Welcome </string>
+    <string name="status">Status : </string>
+    <string name="enquiries">Enquiries : </string>
+    <string name="lebel_message">Notifications</string>
+    <string name="lebel_important_message">Important Note</string>
+    <string name="btn_countinue">CONTINUE</string>
+    <string name="count_down_timer">Order cut-off time</string>
+    <string name="lebel_date_picker_message">Please select your delivery or pick up date from the calendar below:</string>
+    <string name="call">CALL</string>
+    <string name="search_title">Search</string>
+    <string name="available">  Available</string>
+    <string name="frag_product_title">Pantry</string>
+    <string name="choose_date">Please choose your preferred \n pick up or delivery date.</string>
+    <string name="hint_contact_name_for_delivery">First and Last Name</string>
+    <string name="hint_contact_name"><![CDATA[First and Last Name<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="hint_buisness_name"><![CDATA[Business Name<font color=\'#cc0029\'>*</font>]]></string>
+    <string name="title_category">Categories</string>
+    <string name="swiperight">ADD TO FAVOURITE LIST</string>
+    <string name="swipeleft">ADD TO CART</string>
+    <string name="frag_profile_title">Profile</string>
+    <string name="frag_menu_product_search">Product Search</string>
+    <string name="name">Please enter name for pantry list</string>
+    <string name="ok">OK</string>
+    <string name="fav_list_lebel">Choose Favourite List</string>
+    <string name="add_product_button">Add Product</string>
+    <string name="select_fav_list">Please select favourite list</string>
+    <string name="no_product">No product in selected pantry list</string>
+    <string name="error">Oops!!</string>
+    <string name="added_successfully">Product added successfully</string>
+    <string name="add_fav">ADD FAVOURITE LIST</string>
+    <string name="frag_fav_title">My Favourite List</string>
+    <string name="add_enquiry">Item Enquiry</string>
+    <string name="hint_info">Enter Item Enquiry</string>
+    <string name="txt_copy_pantry_list">Please enter new name for copied pantry list</string>
+    <string name="add_fav_list">Add Favourite List</string>
+    <string name="hint_no_fav_list">No favourite list available</string>
+    <string name="hint_no_notify_list">No new notifications</string>
+    <string name="txt_description">DESCRIPTION</string>
+    <string name="txt_price">PRICE</string>
+    <string name="txt_uom">UOM</string>
+    <string name="txt_qty">QTY</string>
+    <string name="txt_qty_total">TOTAL</string>
+    <string name="txt_select">SELECT</string>
+    <string name="txt_add_comment">Add Comment</string>
+    <string name="title_add_new_comment">Add New Comment</string>
+    <string name="title_add_new">Add New</string>
+    <string name="hint_add_comment">Choose Comment</string>
+    <string name="btn_add_item">CONTINUE</string>
+    <string name="btn_place_order">PLACE ORDER</string>
+    <string name="request_for_invoices_title">Request For Invoices</string>
+    <string name="et_email_id">Email Id:</string>
+    <string name="et_from">From:</string>
+    <string name="et_to">To:</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_get_invoices">Get Invoices</string>
+    <string name="txt_order_date">ORDER DATE</string>
+    <string name="txt_number">NUMBER</string>
+    <string name="txt_status">STATUS</string>
+    <string name="hint_comment">Enter Comment</string>
+    <string name="comment_added_sucessfully">Comment Added Successfully</string>
+    <string name="comment_deleted_successfully">Comment Deleted Successfully</string>
+    <string name="favorite_list_deleted_successfully">Favorite List Deleted Successfully</string>
+    <string name="header_my_cart_title">My Cart</string>
+    <string name="txt_weekly_item">Item history</string>
+    <string name="txt_no_data">No  product in Cart</string>
+    <string name="delete_product">Delete Product</string>
+    <string name="order_history_title">Order History</string>
+    <string name="txt_order_number">Enter PO Number</string>
+    <string name="skip">SKIP</string>
+    <string name="txt_btn_save">SAVE ORDER</string>
+    <string name="header_invoices">Invoices</string>
+    <string name="header_order_detail">Order Detail</string>
+    <string name="reorder">Re-Order</string>
+    <string name="enter_email_id">Enter Email id</string>
+    <string name="enter_from">Enter From Date</string>
+    <string name="enter_to">Enter To Date</string>
+    <string name="et_enter_number">Enter PO Number</string>
+    <string name="title_shipping_address">Shipping Addresses</string>
+    <string name="select_address">Please Select Address</string>
+    <string name="charges_msg">Order under $150, freight charges $ 50 will be applicable. Do you want to continue?</string>
+    <string name="title_message">Message</string>
+    <string name="title_walkthrough">WholeSale B2B</string>
+    <string name="title_industries">Industries We Serve</string>
+    <string name="title_beverages">Beverages</string>
+    <string name="tittle_sea_food">Seafood</string>
+    <string name="tittle_meat">Meat</string>
+    <string name="tittle_dry_good">Dry Goods</string>
+    <string name="tittle_coffee">Coffee</string>
+    <string name="tittle_produce">Produce</string>
+    <string name="tittle_packaging">Packaging</string>
+    <string name="tittle_gifts">Gifts</string>
+    <string name="tittle_poultry">Poultry</string>
+    <string name="tittle_product">Product</string>
+    <string name="txt_add_quantity">Add Quantity</string>
+    <string name="no_message">No Notification</string>
+    <string name="error_comment_empty">Please enter comment</string>
+    <string name="validate_phone_min_char">Invalid mobile number. Please ensure it is exactly 10 numbers and it should start with a 0.</string>
+    <string name="capy_pantry_title">Copy Pantry</string>
+    <string name="save_pantry_title">Save Pantry</string>
+    <string name="cart_title">Cart</string>
+    <string name="options_title">Latest Specials</string>
+    <string name="minus">-</string>
+    <string name="from_date">From Date should be less than To Date</string>
+    <string name="no_fav_product">No product in selected favourite list</string>
+    <string name="ask_call_permission">Permission required to call.</string>
+    <string name="quantity_validation">Quantity should be between 0.01 to 99999.99</string>
+    <string name="copy_pantry">Pantry list copied successfully </string>
+    <string name="created_pantry">Pantry list created successfully</string>
+    <string name="created_fav">Favourite list created successfully</string>
+    <string name="copy_fav">Favourite list copied successfully </string>
+    <string name="pantry_exist">Pantry name already exists for this customer</string>
+    <string name="fav_exist">Favourite name already exists for this customer</string>
+    <string name="specials">Latest Specials</string>
+    <string name="walk_though_description">Lorem ipsum dolor sit amet consecr adipiscing elit, sed do eiusmod</string>
+    <string name="no_comment_message">No comments available</string>
+    <string name="txt_no_product">No Product Found</string>
+
+    <string name="txt_terms">TERMS</string>
+    <string name="txt_privacy">PRIVACY</string>
+    <string name="txt_terms_condition">Terms &amp; Conditions</string>
+    <string name="txt_privacy_policy">Privacy Policy</string>
+    <string name="tittle_frieght_charges">Frieght Charges</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="confirm_new_password">Confirm Password</string>
+    <string name="tittle_product_search">Product Search</string>
+    <string name="alert_comment_delete">Do you want to delete this comment?</string>
+    <string name="alert_favorite_list_delete">Are you sure you want to delete</string>
+    <string name="confirmation_msg">Are you sure you wish to place this order? </string>
+    <string name="title_delete">DEL</string>
+    <string name="title_current">Current</string>
+    <string name="title_tap_to_call">Tap to Call</string>
+    <string name="txt_amend_saved_order">Amend saved order</string>
+    <string name="txt_delete_saved_order">Delete saved order</string>
+    <string name="title_saved_msg">You have a saved order, do you want to amend saved order or delete saved order?</string>
+    <string name="delete">Delete</string>
+    <string name="validate_reorder">Please select item to reorder.</string>
+    <string name="title_latest_special">New Products</string>
+    <string name="alert_logout">Are you sure you want to logout?</string>
+    <string name="delete_confirmation">Do you want to delete the saved order?</string>
+    <string name="no_desc_avail">No description available</string>
+    <string name="title_order_value">"Order Value: "</string>
+    <string name="title_currency">$</string>
+    <string name="txt_selected_date">Is the selected delivery date correct?</string>
+    <string name="enter_item_info">Enter item enquiry</string>
+    <string name="msg_order_place">Your order has been placed successfully. Order number is</string>
+    <string name="hint_email_fp">Enter your email address</string>
+    <string name="msg_enquiry">Your enquiry has been sent to the respective department.</string>
+    <string name="hint_copy_pantry_name">Enter the name for pantry list</string>
+    <string name="hint_select_comment">Please select comment</string>
+    <string name="product_avail">IN STOCK</string>
+    <string name="not_product_avail">INCOMING</string>
+    <string name="product_low_stock">LOW STOCK</string>
+    <string name="btn_add_cart">ADD TO CART</string>
+    <string name="btn_alternate_items">ALTERNATE ITEMS</string>
+    <string name="title_prod_detail">Product Detail</string>
+    <string name="validate_enter_password">Please enter Re-enter password</string>
+    <string name="txt_create_fav">No favourite list avaialble. Please create new favourite list.</string>
+    <string name="enter_name_fav">Please enter new name for copied favourite list</string>
+    <string name="unit_update_success">unit updated successfully in the cart</string>
+    <string name="units_update_success">units updated successfully in the cart</string>
+    <string name="unit_added_success">unit added successfully in the cart</string>
+    <string name="units_added_success">units added successfully in the cart</string>
+    <string name="hint_add_Comment">Add Delivery Comment</string>
+    <string name="hint_validate_password">Password should contain atleast one letter in capital, digit and special character</string>
+    <string name="txt_avail">AVAILABILITY</string>
+    <string name="txt_stock">STOCK</string>
+    <string name="txt_weight">WEIGHT</string>
+    <string name="txt_quantity">QUANTITY</string>
+    <string name="txt_item_desc">Item Description</string>
+    <string name="txt_update_cart">UPDATE CART</string>
+    <string name="hint_fav_pantry_name">Enter the name for favourite list</string>
+    <string name="btn_add_items">VIEW BY CATEGORY</string>
+    <string name="label_invoice">Invoice- </string>
+    <string name="from_list">from favourites ?</string>
+    <string name="alert_product_delete">Are you sure you want to delete\n</string>
+    <string name="from_cart">\nfrom the cart?</string>
+    <string name="desc_beverages">&lt;b>Customer Orders&lt;/b> direct to your accounting system</string>
+    <string name="desc_sea_food">&lt;b>Portion Ordering&lt;/b> for easy product selection</string>
+    <string name="desc_meat">&lt;b>Random Weight&lt;/b> support so you can sell by kg or each</string>
+    <string name="desc_dry_goods">&lt;b>Digital Picking&lt;/b> that improves operational efficiencies</string>
+    <string name="desc_coffee">&lt;b>Sell Cartons&lt;/b> and charge customers by the kg</string>
+    <string name="desc_produce">&lt;b>Supplier Ordering&lt;/b> saving hours each day at the markets</string>
+    <string name="desc_packaging">&lt;b>Proof of Delivery&lt;/b> enabling digital signatures on receipt of goods</string>
+    <string name="desc_gifts">&lt;b>Barcode Scanning&lt;/b> for rapid picking and packing</string>
+    <string name="desc_poultry">&lt;b>Payment Gateway&lt;/b> with pre-authorisation prior to invoice</string>
+    <string name="desc_product">&lt;b>Sales Rep&lt;/b> tool for hyper-efficient ordering</string>
+    <string name="no_number_available">No number available</string>
+    <string name="add_comment">Please add comment</string>
+    <string name="frag_default_fav_title">Favourite</string>
+    <string name="pantry_already_exist">Product already exists in specified pantry list</string>
+    <string name="fav_already_exist">Product already exists in specified favourite list</string>
+    <string name="txt_customer_id">ID No.</string>
+    <string name="txt_customer">Customers</string>
+    <string name="txt_mobile_no">Mobile No.</string>
+    <string name="txt_customer_terms">Terms</string>
+    <string name="txt_acc_type">A/C Type</string>
+    <string name="txt_ytd_sale">YTD Sales</string>
+    <string name="txt_mtd_sale">MTD Sales</string>
+    <string name="txt_prev_sale">PREV Sales</string>
+    <string name="txt_outstanding">Owing</string>
+    <string name="txt_over_due">Overdue</string>
+    <string name="txt_balance">Balance</string>
+    <string name="txt_order_place">Place Order</string>
+    <string name="txt_pantry_items">PANTRY ITEMS</string>
+    <string name="txt_customer_name">Customer</string>
+    <string name="txt_acc_no">Account No.</string>
+    <string name="txt_delivery_date">Delivery Date</string>
+    <string name="txt_delivery_day">Delivery Day</string>
+    <string name="txt_run_no">Run No.</string>
+    <string name="txt_packing">Packing SEQ</string>
+    <string name="txt_external_doc">External DOC</string>
+    <string name="txt_order_value">Order Value</string>
+    <string name="txt_selected_pantry">Selected Pantry List</string>
+    <string name="txt_search_pantry">Search in Pantry List</string>
+    <string name="txt_show_groups">SHOW GROUPS</string>
+    <string name="txt_pantry_list">PANTRY LIST</string>
+    <string name="txt_hide_details">HIDE DETAILS</string>
+    <string name="txt_code">Code</string>
+    <string name="txt_pantry_desc">Description</string>
+    <string name="txt_order_qty">QTY</string>
+    <string name="txt_order_uom">UOM</string>
+    <string name="txt_stock_hand">SOH</string>
+    <string name="txt_np">N/P</string>
+    <string name="txt_unit_price">Unit Price</string>
+    <string name="txt_amount">Amount</string>
+    <string name="txt_gst">GST</string>
+    <string name="txt_comment_line">Comment \nLine</string>
+    <string name="txt_price_info">Price \nInfo</string>
+    <string name="txt_item_avail">Item \nAvailability</string>
+    <string name="txt_shipping">Shipping</string>
+    <string name="txt_customer_info">Customer \nInfo</string>
+    <string name="txt_delete_order">Delete \nOrder</string>
+    <string name="txt_release_order">Release \nOrder</string>
+    <string name="txt_order_margin">Order \nMargin</string>
+    <string name="txt_select_customer">Select Customer</string>
+    <string name="txt_search_item">Search for an item</string>
+    <string name="txt_show_all">SHOW ALL</string>
+    <string name="txt_sale_history">Sales \nHistory</string>
+    <string name="txt_wk_sale1">WK1</string>
+    <string name="txt_wk_sale2">WK2</string>
+    <string name="txt_wk_sale3">WK3</string>
+    <string name="txt_wk_sale4">WK4</string>
+    <string name="txt_wk_sale5">WK5</string>
+    <string name="txt_wk_sale6">WK6</string>
+    <string name="txt_wk_sale7">WK7</string>
+    <string name="txt_wk_sale8">WK8</string>
+    <string name="title_add_order_comment">Add Comments to Order</string>
+    <string name="header_add_invoice">Add to order</string>
+    <string name="header_picking_slip">Add to Picking slip</string>
+    <string name="btn_send">SEND</string>
+    <string name="dollar_sign">$</string>
+    <string name="title_pantry">My Pantry List</string>
+    <string name="country_wide_item">* Denotes countrywide rewards item</string>
+    <string name="txt_title_price_info">Price Information</string>
+    <string name="txt_cost_price">Cost Price:</string>
+    <string name="txt_customer_price">Customer Price:</string>
+    <string name="txt_profit">% Profit:</string>
+    <string name="txt_change_price">Change Price to $:</string>
+    <string name="txt_change_margin">Change Margin in %:</string>
+    <string name="btn_update">UPDATE</string>
+    <string name="btn_apply">APPLY</string>
+    <string name="btn_done">DONE</string>
+    <string name="hint_enter_pantry_list_name">Enter pantry list name</string>
+    <string name="title_item_avail">Item Availability</string>
+    <string name="txt_warehouse">Warehouse</string>
+    <string name="txt_qty_hand">QTY on Hand</string>
+    <string name="txt_qty_order">QTY on Order</string>
+    <string name="txt_due_date">Due Date</string>
+    <string name="hint_select_item">Please select item first.</string>
+    <string name="percentage">%</string>
+    <string name="title_price_info">Price Info</string>
+    <string name="cart_empty">Please add at least one item into the \ncart to check the order margin.</string>
+    <string name="txt_show_details">SHOW DETAILS</string>
+    <string name="txt_cart_empty">Your cart is empty.</string>
+    <string name="txt_rep">REP.</string>
+    <string name="txt_category">CATEGORY</string>
+    <string name="txt_sub_category">SUB CATEGORY</string>
+    <string name="btn_spl_price">SPECIAL PRICE</string>
+    <string name="txt_taken_by">Taken By :</string>
+    <string name="txt_header_product">Products</string>
+    <string name="txt_cust_price">Cust Price</string>
+    <string name="txt_code_no">SUPPLIER CODE: </string>
+    <string name="txt_spl_price">Special Price</string>
+    <string name="is_spl_price">Is this special price for :</string>
+    <string name="btn_always_apply">Always apply</string>
+    <string name="btn_this_order">This order only</string>
+    <string name="txt_search_customer">Search by Customer</string>
+    <string name="txt_search_product">Search by Product</string>
+    <string name="txt_welcome">Welcome </string>
+    <string name="txt_hide_group">HIDE GROUPS</string>
+    <string name="txt_no_pantry">No Pantry</string>
+    <string name="hint_enter_price">Enter Price</string>
+    <string name="header_search_product">Search Product</string>
+    <string name="txt_title_cust_info">Customer Information</string>
+    <string name="txt_sales_customer_info">Customer info</string>
+    <string name="txt_financial_info">Financial info</string>
+    <string name="txt_price_margin">Please enter either updated price or margin.</string>
+    <string name="hint_cart_empty">Your cart is empty.</string>
+    <string name="txt_alpha_code">Alpha Code:</string>
+    <string name="txt_cust">Customer:</string>
+    <string name="txt_name">Name:</string>
+    <string name="txt_abn">ABN:</string>
+    <string name="txt_address1">Address1:</string>
+    <string name="txt_address2">Address2:</string>
+    <string name="txt_suburb">Suburb:</string>
+    <string name="txt_post_code">Post Code:</string>
+    <string name="txt_contact_name">Contact Name:</string>
+    <string name="txt_phone1">Phone1:</string>
+    <string name="txt_phone2">Phone2:</string>
+    <string name="txt_fax">Fax:</string>
+    <string name="txt_email">Email:</string>
+    <string name="txt_salesman_code">Salesman Code:</string>
+    <string name="txt_credit_limit">Credit Limit:</string>
+    <string name="txt_price_code">Price Code:</string>
+    <string name="txt_90_bal">90 Days Balance:</string>
+    <string name="txt_60_bal">60 Days Balance:</string>
+    <string name="txt_30_bal">30 Days Balance:</string>
+    <string name="txt_overdue_bal">Overdue Balance:</string>
+    <string name="txt_bal">Balance:</string>
+    <string name="txt_order_margin_value">Order Margin Percentage</string>
+    <string name="your_order_margin">The margin percentage is :</string>
+    <string name="txt_enter_packing_swq">Please enter the packing Sequence</string>
+    <string name="hint_packing_seq">Packing Sequence</string>
+    <string name="txt_exter_doc">External Doc</string>
+    <string name="hint_exterenL_doc">Enter details here</string>
+    <string name="msg_order_delete">Order Deleted</string>
+    <string name="no_customer_found">No Customer Found</string>
+    <string name="product_cost_price">Cost Price</string>
+    <string name="txt_added">ADDED</string>
+    <string name="confirm_delete_order">Are you sure you want to delete order?</string>
+    <string name="txt_rep_quantity">Quantity</string>
+    <string name="txt_rep_order_date">Order Date</string>
+    <string name="txt_rep_number">Number</string>
+    <string name="txt_rep_status">Status</string>
+    <string name="name_fav_list">Please enter name for favourite list </string>
+    <string name="heading_new_pantry_list">Please enter a new name for the</string>
+    <string name="hint_new_pantry_name">Please enter name for</string>
+    <string name="label_welcome">Welcome message</string>
+    <string name="btn_accept">Accept</string>
+    <string name="btn_decline">Decline</string>
+    <string name="label_warning">WARNING!</string>
+    <string name="btn_agree">Agree</string>
+    <string name="header_contact_details">Contact Details</string>
+    <string name="heading_delivery_date">Delivery Date</string>
+    <string name="heading_delivery_status">Delivery Status</string>
+    <string name="title_delivery">Check Delivery</string>
+    <string name="title_product_req">Special Product Request</string>
+    <string name="txt_contact_email">E-mail</string>
+    <string name="frag_spl_prod_req">Special Product Request</string>
+    <string name="liqour_message">"Under the Liquor Control Reform Act 1998 it is an offence\n\n.To supply alcohol to a person under the age of 18 years (Penalty exceeds $8,000)\n\n .For a person under the age 17 years to purchase or receive liquor.(penalty exceeds $700)"</string>
+    <string name="max_qty">This item has maximum order quantity of</string>
+    <string name="min_qty">This item has minimum order quantity of</string>
+    <string name="title_notice_board">Noticeboard</string>
+    <string name="account_on_hold">Your account is on hold. You can not browse on this application.</string>
+    <string name="msg_spl_prod_req">Your special product request has been sent successfully</string>
+    <string name="msg_future_date">You can not order this selected date</string>
+    <string name="enter_prod_req">Please enter prod request</string>
+    <string name="browsing_app">This action cannot be completed because your account is on hold. Please contact your company administrator.</string>
+    <string name="no_order_found">No Orders found for this customer.</string>
+    <string name="confirm_msg_qty">Do you want to add </string>
+    <string name="add_unit">unit to the cart ?</string>
+    <string name="add_units">units to the cart ?</string>
+    <string name="on_hold">On Hold</string>
+    <string name="no_sub_categories_list">No subCategories list available</string>
+    <string name="less_spl_price">Special price must be less than customer price</string>
+    <string name="not_avail">N/A</string>
+    <string name="no_pantry">No pantry exist for this customer</string>
+    <string name="no_fav">No favoutite exist for this customer</string>
+    <string name="no_address">No address found</string>
+    <string name="add_pantry">Add pantry list</string>
+    <string name="external_doc">External Document</string>
+    <string name="salesrep_not_login">Sales Rep can not login into this device</string>
+    <string name="exit_app">Do you really want to exit from the app?</string>
+    <string name="rep_name">Rep Name:</string>
+    <string name="customer">Customer:</string>
+    <string name="carton_update_success">carton updated successfully in the cart</string>
+    <string name="cartons_update_success">cartons updated successfully in the cart</string>
+
+    <string name="carton_add_success">carton added successfully in the cart</string>
+    <string name="cartons_add_success">cartons added successfully in the cart</string>
+    <string name="pack_size">[CTN QTY: </string>
+    <string name="market_price">MARKET</string>
+    <string name="account">Account</string>
+    <string name="buy_in_message">This item is an Order In item. We will deliver ASAP</string>
+    <string name="child_name">Name</string>
+    <string name="margin">Margin:</string>
+    <string name="order_item">Order in items</string>
+    <string name="message">Please note these following product(s) are ORDER IN items and we will try to deliver ASAP:</string>
+    <string name="order_place">Continue to place order ? </string>
+    <string name="existing_account">Already have an account?</string>
+    <string name="backorder_stock_not_available">Your order quantity is greater than the stock on hand quantity of</string>
+    <string name="backorder_stock_not_available_part_2">Only the available quantity will be added to the cart.</string>
+    <string name="stock_not_available">Sorry, This product is out of stock at this moment</string>
+    <string name="lebel_important">Important</string>
+    <string name="frag_menu_scan">Scan</string>
+    <string name="camera_permission">Yes! Allow this app to use my camera</string>
+    <string name="scan">Scan</string>
+    <string name="permission_camera_title">Camera permission required</string>
+    <string name="permission_camera_message">This app requires camera permission for opening barcode scan.</string>
+    <string name="place_the_barcode_within_the_markers">Place the barcode within the markers.</string>
+    <string name="barcode">Barcode </string>
+    <string name="barcode_error">Does not exist!</string>
+    <string name="item_not_found">ITEM NOT FOUND!</string>
+    <!--Location API Alert Strings-->
+    <string name="alert_location_permission_needed">Location Services Permission required for this app.Do you want to try again?</string>
+    <string name="alert_enable_location_permission_manually">Go to settings and enable location permissions.</string>
+    <string name="alert_enable_GPS">Please enable GPS from settings.</string>
+    <string name="accountdetail">Account Status</string>
+    <string name="current_balance">Current Balance:</string>
+    <string name="current_balance_total">Total Outstanding:</string>
+    <string name="current_balance_120">120+ Days:</string>
+    <string name="current_balance_90">90+ Days:</string>
+    <string name="current_balance_60">60+ Days:</string>
+    <string name="current_balance_30">30+ Days:</string>
+    <string name="zero">$0</string>
+    <string name="terms">Terms</string>
+    <string name="days_overdue">Days overdue:</string>
+    <string name="total_owing">Total Amount Owing</string>
+    <string name="order">Order</string>
+    <string name="txt_volume_lesser">The total order volume should be greater than or equal to 30L to place an order. Current order volume is :</string>
+    <string name="label_developedby">\@ Developed by Cosmo Food Service</string>
+    <string name="hint_abn">ABN (Optional)</string>
+    <string name="validate_abn">Please enter ABN</string>
+    <string name="back">Back</string>
+    <string name="label_delivery_mode">How would you like to \n  receive your order?</string>
+    <string name="label_pickup">PICK UP</string>
+    <string name="label_delivery">DELIVERY</string>
+    <string name="label_vic"></string>
+    <string name="info_cutofftime">*Order cut-off time 2PM</string>
+    <string name="frag_menu_latest_special">What\'s New</string>
+    <string name="tag_new">NEW</string>
+    <string name="tag_back_soon">BACK SOON</string>
+    <string name="tag_sale">SALE</string>
+    <string name="txt_cart_subtotal">Subtotal</string>
+    <string name="txt_cart_gst">Plus GST</string>
+    <string name="txt_cart_total">Total (Inc GST)</string>
+    <string name="ctn_qty">CTN QTY</string>
+    <string name="txt_item_feature">Item Inclusions</string>
+    <string name="quantity_validation_non_zero">Quantity should be greter than 0</string>
+    <string name="share_using">Share using</string>
+    <string name="session_expired">Your session has been expired, Please login again</string>
+    <string name="rescan">Tap to\n Rescan</string>
+    <string name="validate_streetaddress">Enter Street Address</string>
+    <string name="validate_suburb">Enter Suburb</string>
+    <string name="validate_postcode">Enter Post Code</string>
+    <string name="businessaccount">Business</string>
+    <string name="privateDelivery">Private Home Delivery</string>
+
+
+    <string name="api_key">AIzaSyD1SMGHFaBfV9bE2XiE7IpykbWJ2UmZEIE</string>
+    <string name="priate_custromer">Are you  a Private Home Delivery customer?</string>
+    <string name="loginasguest">BROWSE SHOP</string>
+    <string name="guestusercheck">Sorry, you are unable to place orders as a guest. Please logout and click the registration button on the login page to get instant access.</string>
+    <string name="pickup_check">Are you sure you want to pickup?</string>
+    <string name="title_suggestion_label_1">We noticed you ordered these previously. Would you like to add?</string>
+    <string name="title_suggestion_label_2">And here are some suggestions we have specifically made for you</string>
+    <string name="promo_label">Do you have promotional code?</string>
+    <string name="promo_text">Enter your promo code below to receive your exclusive offer</string>
+    <string name="enterpromo">Enter Code</string>
+    <string name="promo">Promo code applied:</string>
+    <string name="generatequote">Generate Customer Quote</string>
+    <string name="adddtoqoute">Add to Quote</string>
+    <string name="lblgenerateQuote">Enter Customer Details to Send Quote</string>
+
+    <string name="recurring_popup_title">Would you like to make this order a regular recurring order?</string>
+    <string name="recurring_popup_message">This feature makes re-ordering super convenient and allows you to set-up, manage and even suspend a recurring order at any time, so that you regularly receive your order delivered on time every time.\n\n\nYou can choose between the day of the week, the delivery frequency from weekly, fortnightly or monthly and choose different delivery addresses.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="add_item">ADD ITEM</string>
+    <string name="save_order">SAVE ORDER</string>
+
+    <string name="recurring_notes">
+    <![CDATA[
+    <h2>Notes on the initial setting up of a Recurring Order</h2>
+    <p>Please be aware that you can select a range of item(s) to have the system automatically order and deliver for you at a pre-determined frequency (Eg weekly, fortnightly etc). Your start date will your first delivery date. The payment will be deducted 1-2 days prior to your delivery date in accordance with our order cut-off times for on-time delivery. On successfully setting up a recurring order, you will be emailed a Recurring Order confirmation once this has been set-up. Should for any reason the payment not succeed you will be sent an email confirmation.</p>
+    <p>You are able to login and change or even suspend your Recurring Order at any time on or prior to the next payment date. In some cases if your delivery is for the next day, then an immediate payment will be made when you set up the first Recurring Order. If the delivery date is 2 or more days into the future, you will not be immediately charged, but only on the charge date that you are advised.</p>
+    <p>Remember at any time, you can revise or suspend your Recurring Order by simply logging in.</p>
+    <h3>Information about your next Recurring Order</h3>
+    <p>Your next charge of  %1$s will be made on the %2$s for a %3$s delivery date.</p>
+    ]]>
+    </string>
+
+    <string name="payment_notes">
+    <![CDATA[
+    <h2>Notice about Payments</h2>
+    <p>Please note that if your delivery date is for tomorrow, then payment will be immediately deducted, otherwise your payment will be deducted 1-2 days prior to your delivery date in accordance with our order cut-off times for on-time delivery.</p>
+    ]]>
+    </string>
+
+    <string name="stand_order">Standing Order</string>
+    <string name="header_my_recurring_cart_title">My Recurring Cart</string>
+    <string name="my_recurring_cart_title">Add Recurring Item</string>
+    <string name="frag_menu_notification">Notifications</string>
+
+    <string name="header_notification">Notifications</string>
+
+    <string name="labelSplash">Scan your way to success</string>
+    <string name="labelSplashScan">Scanning the QR code \nrewards you and your business</string>
+
+    <string name="labelSplash2">Live shipment updates</string>
+    <string name="labelSplashScan2">Know the exact location and \nstatus of your shipment</string>
+
+    <string name="labelSplash3">Get notified every step</string>
+    <string name="labelSplashScan3">Receive instant notifications at every \ngoods handover point</string>
+
+    <string name="labelSplash4">Get instantly paid!</string>
+    <string name="labelSplashScan4">Once the buyer receives the goods, \nfunds are instantly in your account</string>
+
+    <string name="start">GOT IT</string>
+    <string name="next">NEXT</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="welcome">Welcome Back!</string>
+    <string name="hint_email">Email Address</string>
+
+
+    <string name="registration">Registration</string>
+    <string name="login_link"><![CDATA[<font color=#c1c1c1>Already have an account?</font> <font color=#2278d4>Login</font>]]></string>
+
+    <string name="hint_first_name">First Name</string>
+    <string name="hint_last_name">Last Name</string>
+    <string name="hint_mobile_number">Mobile Number</string>
+
+    <string name="hint_country">Country</string>
+    <string name="hint_city">City</string>
+
+    <string name="buyer">Are you a buyer?</string>
+    <string name="seller">Are you a seller?</string>
+    <string name="driver">Are you a driver?</string>
+
+    <string name="url_not_working">Something went wrong, Please try again</string>
+
+    <string name="validate_first_name">Please enter first name</string>
+    <string name="validate_last_name">Please enter last name</string>
+    <string name="validate_mobile_number">Please enter mobile number</string>
+    <string name="validate_mobile_number_length">Please enter valid mobile number</string>
+    <string name="validate_country">Please enter country</string>
+    <string name="validate_city">Please enter city</string>
+    <string name="validate_user_type">Please select user type</string>
+
+
+</resources>

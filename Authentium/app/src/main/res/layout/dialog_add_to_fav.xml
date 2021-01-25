@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_background_white"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_twnety"
+            android:gravity="center"
+            android:text="@string/fav_list_lebel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/frag_profile_text_lebel" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFavList"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="@dimen/button_width"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_twnety"
+            android:layout_gravity="center"
+            android:background="@drawable/ripple_button_effect"
+            android:paddingLeft="@dimen/margin_thirty"
+            android:paddingRight="@dimen/margin_thirty"
+            android:text="@string/add_product_button"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:background="@color/login_white"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_alignParentLeft="true"
+
+android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:id="@+id/txtCustomerNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:text="Customer Notes" />
+
+    <Button
+        android:layout_alignParentRight="true"
+         android:textColor="@color/login_white"
+        android:background="@color/black"
+        android:layout_gravity="right"
+        android:id="@+id/btnAddNote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Note" />
+</RelativeLayout>
+    <TextView
+        android:id="@+id/txtNoData"
+        android:text="No notes found"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvNotes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background_welcome"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="400dp"
+        android:layout_marginTop="@dimen/margin_twnety"
+        android:gravity="center"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:text="@string/label_delivery_mode"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifty"
+            android:orientation="vertical">
+        <ImageView
+            android:id="@+id/imgPickup"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/margin_thirty"
+            android:layout_weight="5"
+             android:src="@drawable/ic_pick_up" />
+            <TextView
+                android:layout_marginTop="@dimen/text_size_category_name"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_category_name"
+                android:text="@string/label_pickup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/fifty"
+            android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgDelivery"
+
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/margin_thirty"
+            android:layout_weight="5"
+            android:src="@drawable/ic_delivery" />
+            <TextView
+                android:layout_marginTop="@dimen/text_size_category_name"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_category_name"
+                android:text="@string/label_delivery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>/
+    </LinearLayout>
+
+    <CheckBox
+        android:layout_marginTop="@dimen/margin_twnety"
+        android:id="@+id/checkbox"
+        android:layout_marginLeft="@dimen/margin_twnety"
+        android:text="Permission to leave delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></CheckBox>
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_marginTop="@dimen/margin_twnety"
+        android:layout_marginLeft="@dimen/margin_twnety"
+        android:text="Contactless delivery"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></CheckBox>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/fifty"
+        android:background="@color/grey_text_color"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_weight="5"
+            android:background="@color/colorPrimaryUnited"
+            android:text="@string/back"
+            android:textColor="@color/login_white" />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+
+            android:layout_weight="5"
+            android:background="@color/colorSecondary"
+            android:text="@string/btn_countinue"
+            android:textColor="@color/login_white" />
+    </LinearLayout>
+</LinearLayout>

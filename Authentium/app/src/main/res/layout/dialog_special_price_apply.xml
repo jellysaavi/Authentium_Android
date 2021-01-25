@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/rounded_background_white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_ten"
+    android:minWidth="350dp"
+    android:minHeight="150dp">
+
+    <TextView
+        android:maxLines="2"
+        android:id="@+id/txtDateLebel"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="@dimen/padding_ten"
+        android:paddingBottom="@dimen/padding_ten"
+        android:gravity="center"
+        android:textSize="@dimen/textSizeHeader"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:text="@string/txt_spl_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/txtProductCode"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center"
+        android:text="@string/is_spl_price"
+        android:paddingTop="@dimen/padding_ten"
+        android:paddingBottom="@dimen/padding_ten"
+        android:textSize="@dimen/frag_welcome_counter"
+        android:textColor="@color/sales_rep_product_list_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgSplPrice"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/ic_spl_price"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingTop="@dimen/margin_forty"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnApply"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/btn_always_apply"
+            android:background="@drawable/ripple_button_effect"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"/>
+
+
+        <Button
+            android:layout_margin="@dimen/margin_five"
+            android:id="@+id/btnThisOrder"
+            android:textSize="@dimen/loginTextSize"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/btn_this_order"
+            android:background="@drawable/ripple_button_effect"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

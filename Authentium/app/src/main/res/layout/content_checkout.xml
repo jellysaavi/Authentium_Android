@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    >
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/mToolbar"
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageView"
+            android:src="@drawable/back_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            tools:ignore="VectorDrawableCompat" />
+
+        <TextView
+            android:text="Payment Details"
+            android:id="@+id/titleName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="21.5sp"
+
+            android:textColor="@color/login_white"
+            android:layout_gravity="center_horizontal"/>
+    </androidx.appcompat.widget.Toolbar>
+
+    <ScrollView
+        android:padding="@dimen/activity_horizontal_margin"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:id="@+id/title_payment"
+                android:text="Payment Processed by Stripe Payments"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textColor="@color/black"
+                android:layout_gravity="left"/>
+
+            <LinearLayout
+                android:id="@+id/layout_recurr_stripe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_thirty"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Status:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/status_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Order Type:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/order_type_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Address:"
+                        android:id="@+id/address_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/address_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toEndOf="@+id/address_label"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Start Date:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/start_date_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Frequency:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/frequency_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:padding="@dimen/padding_ten"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_forty"
+                android:layout_marginRight="20dp"
+                android:textColor="#79868e"
+                android:textSize="25sp"
+                android:text="Accepted cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></TextView>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_twnety"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                >
+
+                <ImageView
+                    android:layout_marginLeft="20dp"
+                    android:layout_weight="3.3"
+
+                    android:src="@drawable/visa"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:layout_weight="3.3"
+                    android:src="@drawable/master"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"/>
+                <ImageView
+                    android:layout_weight="3.3"
+
+                    android:src="@drawable/american"
+                    android:layout_width="0dip"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+            <TextView
+                android:layout_marginTop="50dp"
+
+                android:text="Pay with your credit card via Stripe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textColor="@color/light_color"
+                android:layout_gravity="left"/>
+            <com.stripe.android.view.CardInputWidget
+                android:layout_marginTop="@dimen/margin_ten"
+                android:id="@+id/cardInputWidget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/margin_thirty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/black"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="@dimen/margin_twnety"
+                    android:text="Amount to be charged"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/txtPrice"
+                    android:gravity="center"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="@dimen/margin_twnety"
+                    android:text="$20 \n (Incl GST)"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </RelativeLayout>
+
+
+            <Button
+
+                android:background="#3b579d"
+                android:text="Pay"
+                android:textAllCaps="false"
+                android:textColor="@color/login_white"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/payButton"
+                android:layout_marginTop="60dp"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--  ...  -->
+
+
+    <!--  ...  -->
+
+</LinearLayout>

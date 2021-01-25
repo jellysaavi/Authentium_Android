@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/backgroundMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/headerMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/margin_fifty"
+        android:orientation="vertical"
+        android:background="@color/background_login"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/registration"
+            android:textAlignment="center"
+            android:textColor="@color/splashLabelColor"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/background_login"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:visibility="visible"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1.0"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/margin_twnety"
+                android:padding="@dimen/activity_horizontal_margin">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/registrationbg"
+                    android:visibility="visible" />
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_weight="1.0"
+                android:orientation="vertical"
+                android:background="@drawable/white_bg"
+                android:layout_marginLeft="@dimen/margin_ten"
+                android:layout_marginRight="@dimen/margin_ten">
+
+                <LinearLayout
+                    android:id="@+id/lyt_checkBox"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margin_forty"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <CheckBox
+                        android:gravity="center_vertical"
+                        android:id="@+id/chkBoxBuyer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/buyer"
+                        android:textSize="@dimen/loginTextSize"
+                        android:layout_gravity="center"
+                        android:textColor="@color/text_color_grey"
+                        android:button="@drawable/custom_checkbox"
+                        android:visibility="visible" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginRight="@dimen/margin_thirty"
+                    android:layout_marginLeft="@dimen/margin_thirty"
+                    android:background="@color/light_color"
+                    android:textSize="@dimen/loginTextSize" />
+
+
+                <LinearLayout
+                    android:id="@+id/lyt_checkBox2"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <CheckBox
+                        android:gravity="center_vertical"
+                        android:id="@+id/chkBoxDriver"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/driver"
+                        android:textSize="@dimen/loginTextSize"
+                        android:layout_gravity="center"
+                        android:textColor="@color/text_color_grey"
+                        android:button="@drawable/custom_checkbox"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginRight="@dimen/margin_thirty"
+                    android:layout_marginLeft="@dimen/margin_thirty"
+                    android:background="@color/light_color"
+                    android:textSize="@dimen/loginTextSize" />
+
+                <LinearLayout
+                    android:id="@+id/lyt_checkBox3"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <CheckBox
+                        android:gravity="center_vertical"
+                        android:id="@+id/chkBoxSeller"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/seller"
+                        android:textSize="@dimen/loginTextSize"
+                        android:layout_gravity="center"
+                        android:textColor="@color/text_color_grey"
+                        android:button="@drawable/custom_checkbox"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:gravity="center|top"
+                    android:layout_marginTop="@dimen/margin_twnety"
+                    android:layout_gravity="top"
+                    android:layout_weight="1.0"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="right"
+                        android:orientation="horizontal">
+
+
+                        <Button
+                            android:id="@+id/frag_login_btn"
+                            android:layout_width="40dp"
+                            android:layout_marginRight="@dimen/margin_twnety"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="5dp"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:background="@drawable/front_arrow"
+                            android:textColor="@color/skip_button_color" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/frag_signup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/versionNumber"
+                        android:layout_marginTop="@dimen/margin_ten"
+                        android:gravity="center"
+                        android:textColor="@color/selector_text_view"
+                        android:textSize="@dimen/loginTextSize" />
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+</LinearLayout>
+

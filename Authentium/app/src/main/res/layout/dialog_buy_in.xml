@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_background_white"
+    android:minWidth="300dp"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/margin_ten"
+    android:paddingTop="@dimen/margin_ten">
+
+    <TextView
+        android:id="@+id/txtHeaderShipping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_ten"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="@dimen/padding_ten"
+        android:text="@string/order_item"
+        android:textColor="@color/black"
+        android:textSize="@dimen/frag_profile_text_lebel" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_ten"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="@dimen/padding_ten"
+        android:text="@string/message"
+        android:textColor="@color/welcome_background"
+        android:textSize="@dimen/frag_welcome_counter" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ripple_button_grey_effect"
+        android:layout_marginLeft="12dp"
+        android:minHeight="100dp"
+        android:layout_marginRight="12dp">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvBuyInProduct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_ten"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingTop="@dimen/padding_ten"
+        android:text="@string/order_place"
+        android:textColor="@color/black"
+        android:textSize="@dimen/btn_text_size" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/margin_thirty"
+        android:paddingRight="@dimen/margin_thirty">
+
+        <Button
+            android:id="@+id/btnNo"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_ten"
+            android:layout_weight=".5"
+            android:background="@drawable/ripple_button_effect"
+            android:text="@string/no"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize" />
+
+        <Button
+            android:id="@+id/btnYes"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight=".5"
+            android:background="@drawable/ripple_button_effect"
+            android:text="@string/yes"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize" />
+
+    </LinearLayout>
+
+</LinearLayout>

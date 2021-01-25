@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/margin_thirty"
+    android:minWidth="300dp"
+    android:layout_height="match_parent"
+    android:background="@drawable/rounded_background_white"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/margin_twnety"
+    android:paddingTop="@dimen/margin_twnety">
+
+
+    <ScrollView
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        android:layout_weight="9">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+
+                android:id="@+id/title_payment"
+                android:text="Recurring Order Successfully Placed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_twnety"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+            <TextView
+
+                android:id="@+id/subTitle"
+                android:text="You have now successfully generated and saved a recurring order. Below are your details:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/margin_forty"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+            <LinearLayout
+                android:id="@+id/layout_recurr_receipts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_forty"
+                android:orientation="vertical">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Recurring Order Reference:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/reference_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Delivery Date:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/delivery_date_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:weightSum="10"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:id="@+id/charge_label"
+                        android:text="Charge Date (Standard Order Cut-off Times):"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/charge_date_value"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:layout_weight="6"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black"
+                        />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Order Type:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/order_type_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Frequency:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/frequency_value"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:gravity="right"
+                        android:layout_alignParentRight="true"
+                        android:textColor="@color/black"
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Delivery Address:"
+                        android:id="@+id/address_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/address_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toEndOf="@+id/address_label"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_thirty"
+                    android:orientation="horizontal">
+
+                    <TextView
+
+                        android:text="Amount (Incl GST):"
+                        android:id="@+id/amount_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="14sp"
+                        android:layout_alignParentLeft="true"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+
+                        android:id="@+id/amount_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_toEndOf="@+id/amount_label"
+                        android:gravity="right"
+                        android:textColor="@color/black"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+            <TextView
+
+                android:id="@+id/footer"
+                android:text="Should you wish to change any of the above details, you can do so at any time before the above charge date instantly. Recurring orders and charges are done at 11.30pm of the charge date."
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:layout_marginTop="@dimen/margin_forty"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/margin_thirty"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingRight="@dimen/margin_thirty">
+
+        <Button
+            android:id="@+id/btnOk"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ripple_button_effect"
+            android:text="@string/ok"
+            android:layout_gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/loginTextSize" />
+
+
+
+    </LinearLayout>
+
+</LinearLayout>

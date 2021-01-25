@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:visibility="invisible"
+    android:id="@+id/root"
+    android:layout_height="match_parent"
+    android:background="@color/welcome_background"
+    android:gravity="center"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:minWidth="300dp"
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:paddingTop="@dimen/margin_thirty"
+            android:background="@drawable/rounded_background_white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="90dp"
+
+                android:id="@+id/titleDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginLeft="@dimen/margin_ten"
+                android:layout_marginRight="@dimen/margin_ten"
+                android:text="@string/lebel_date_picker_message"
+                android:textColor="@color/black"
+                android:textSize="@dimen/frag_welcome_counter" />
+
+            <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@color/frag_welcome_block"
+                android:gravity="center|center_vertical"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/margin_twnety"
+                ><LinearLayout
+                android:visibility="gone"
+                android:minHeight="50dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|center_vertical"
+                android:background="@color/frag_welcome_block"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_twnety"
+                android:layout_marginBottom="@dimen/margin_twnety"
+                android:orientation="horizontal"
+                android:layout_margin="@dimen/margin_ten">
+                <CheckBox
+                    android:minWidth="200dp"
+                    android:id="@+id/cbDateOne"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/checkbox_text" />
+
+                <CheckBox
+                    android:minWidth="200dp"
+
+                    android:id="@+id/cbDateTwo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="@dimen/checkbox_text"
+                    />
+
+            </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:visibility="gone"
+                android:padding="@dimen/margin_five"
+                android:id="@+id/txtOrdercutoff"
+                android:gravity="center_vertical"
+                android:text="@string/info_cutofftime"
+                android:textSize="@dimen/checkbox_text"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/login_white"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Based on your delivery location and our order cut off times, the available delivery/pick up days for your selected suburb are highlighted green in the calendar below. Please select the next available date you wish to receive your delivery or pick up. Refer to the calendar legend for further assistance."
+                    android:textColor="@color/grey_text_color"
+                    android:textSize="10sp" />
+
+                <TextView
+                    android:id="@+id/recurring_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Recurring Order Date"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:layout_marginBottom="@dimen/margin_ten"
+                    android:textSize="@dimen/frag_welcome_counter" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/login_white"
+                    >
+
+                    <Spinner
+                        style="@style/spinner_style"
+                        android:padding="0.5dp"
+                        android:id="@+id/spinnerFrequencyType"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:gravity="left" />
+
+                    <Spinner
+                        android:id="@+id/spinnerDeliveryType"
+                        style="@style/spinner_style"
+                        android:padding="0.5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:gravity="right" />
+
+
+                </RelativeLayout>
+
+                <com.applandeo.materialcalendarview.CalendarView
+                    android:id="@+id/calendarView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:selectionColor="#bee8c1"
+                    app:headerColor="@color/login_white"
+
+                    app:daysLabelsColor="#bee8c1"
+                    app:selectionLabelColor="@color/login_white"
+                    app:headerLabelColor="@color/black"
+                    app:highlightedDaysLabelsColor="@color/red"
+                    app:disabledDaysLabelsColor="#e5e5e5"
+                    app:type="many_days_picker"
+
+                    android:layout_gravity="center" />
+
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/llDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="@dimen/margin_twnety"
+                    android:layout_marginRight="4dp"
+                    android:weightSum="10">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="3"
+                            android:id="@+id/txtAddDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="+"
+                            android:padding="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/date_picker_size_text" />
+
+                        <TextView
+                            android:layout_weight="3"
+                            android:maxLines="1"
+                            android:id="@+id/txtDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/frag_welcome_counter"
+                            android:gravity="center"
+                            tools:text="Wednesday,10" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="3"
+                            android:id="@+id/txtLessDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="-"
+                            android:padding="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/date_picker_size_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="5"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_weight="3"
+                            android:id="@+id/txtAddMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:text="+"
+                            android:padding="5dp"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/date_picker_size_text" />
+
+                        <TextView
+                            android:layout_weight="3"
+                            android:id="@+id/txtMonth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/frag_welcome_counter"
+                            android:gravity="center"
+                            tools:text="November" />
+
+                        <TextView
+
+                            android:layout_weight="3"
+                            android:gravity="center"
+                            android:id="@+id/txtLessMonth"
+                            android:layout_width="wrap_content"
+                            android:padding="5dp"
+                            android:layout_height="0dip"
+                            android:text="-"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/date_picker_size_text" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:weightSum="10"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical"
+                        android:visibility="visible">
+
+                        <TextView
+                            android:id="@+id/txtAddYear"
+                            android:layout_weight="3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="+"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/date_picker_size_text" />
+
+                        <TextView
+                            android:layout_weight="4"
+                            android:id="@+id/txtYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:textColor="@color/colorPrimary"
+                            tools:text="10" />
+
+                        <TextView
+                            android:layout_weight="3"
+                            android:id="@+id/txtLessYear"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dip"
+                            android:text="-"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/date_picker_size_text" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="@dimen/margin_ten"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@drawable/swipe_arrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="0dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="#bee8c1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="@dimen/margin_ten"
+                    />
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_twnety"
+                    android:text="Available Delivery Day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="#f6cac6"
+                    android:layout_marginLeft="@dimen/margin_ten"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_twnety"
+                    android:text="Sold out/Past cut off"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_marginTop="@dimen/margin_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:background="#e5e5e5"
+                    android:layout_marginLeft="@dimen/margin_ten"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"/>
+
+                <TextView
+                    android:layout_marginLeft="@dimen/margin_twnety"
+                    android:text="Not available in your delivery area"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/suspendLayout"
+                android:layout_marginTop="@dimen/margin_ten"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <CheckBox
+                    android:id="@+id/checkbox"
+                    android:text="Suspend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="false"
+                    android:layout_gravity="center"
+                    >
+                </CheckBox>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal"
+                >
+
+
+                <Button
+                    android:id="@+id/btnCall"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@color/colorPrimaryUnited"
+                    android:text="@string/back"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:layout_marginBottom="@dimen/margin_ten"
+                    android:textColor="@color/login_white"
+                    android:textSize="@dimen/loginTextSize" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/text_color_grey_light" />
+
+                <Button
+                    android:id="@+id/btnContinue"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:background="@color/colorSecondary"
+                    android:text="@string/btn_countinue"
+                    android:layout_marginTop="@dimen/margin_ten"
+                    android:layout_marginBottom="@dimen/margin_ten"
+                    android:textColor="@color/login_white"
+                    android:textSize="@dimen/loginTextSize" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

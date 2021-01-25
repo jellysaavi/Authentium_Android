@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llMainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingTop="@dimen/margin_ten"
+    android:paddingBottom="@dimen/margin_ten"
+    android:weightSum="10">
+
+    <LinearLayout
+        android:layout_width="0dip"
+
+        android:layout_height="wrap_content"
+        android:layout_weight="3.8"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="3"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:textSize="@dimen/detail_screen_label_size" />
+        <TextView
+            android:layout_marginLeft="@dimen/margin_ten"
+            android:id="@+id/txtProductTag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:gravity="left|start"
+            android:paddingLeft="@dimen/margin_five"
+            android:paddingRight="@dimen/margin_five"
+
+            android:textColor="@color/login_white" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgProductComment"
+        android:layout_width="0dp"
+        android:layout_height="17dp"
+        android:layout_weight=".5"
+        android:visibility="invisible"
+        app:srcCompat="@drawable/ic_pencil" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2.4"
+        android:ellipsize="end"
+        android:gravity="right|center"
+        android:maxLines="1"
+        android:paddingRight="8dp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="@dimen/detail_screen_label_size" />
+
+
+    <Spinner
+        android:id="@+id/spinProductUnit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginRight="2dp"
+        android:layout_weight="1.5"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="2.5"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="-2dp"
+            android:layout_marginRight="-2dp"
+            android:background="@drawable/fields_round_background_grey"
+            android:gravity="center"
+            android:minWidth="65dp"
+            android:minEms="2"
+            android:padding="3dp"
+            android:paddingTop="@dimen/margin_five"
+            android:paddingBottom="@dimen/margin_five"
+            android:textSize="@dimen/qtry_text_size"
+            tools:text="52863" />
+
+        <EditText
+            android:id="@+id/etQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="-2dp"
+            android:layout_toRightOf="@+id/imgQuantityDescrease"
+            android:background="@drawable/fields_round_background_blue"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:imeOptions="actionDone"
+            android:inputType="numberDecimal"
+            android:maxLines="1"
+            android:minWidth="30dp"
+            android:padding="5dp"
+            android:textSize="@dimen/qtry_text_size"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".8"
+        android:gravity="right">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center_horizontal"
+            app:srcCompat="@drawable/ic_close_circular_button" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: com.stripe:stripe-3ds2-android:2.7.2@aar">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/stripe-3ds2-android-2.7.2.aar/d5380bd71fd6e03ab2e44eb382bc5e15/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/stripe-3ds2-android-2.7.2.aar/d5380bd71fd6e03ab2e44eb382bc5e15/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/stripe-3ds2-android-2.7.2.aar/d5380bd71fd6e03ab2e44eb382bc5e15/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
